@@ -1,0 +1,21 @@
+{
+  "name": "adm-motor-ventas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Motor de Ventas Autónomo con IA — Atlas Digital Marketing (ADM).",
+  "workspaces": [
+    "services/scraper",
+    "agent"
+  ],
+  "scripts": {
+    "db:setup": "./db/run.sh --con-semillas",
+    "prospectar": "npm --workspace services/scraper run prospectar",
+    "calificar": "npm --workspace agent run calificar",
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

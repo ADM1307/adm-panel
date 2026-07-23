@@ -1,0 +1,13 @@
+{
+  "name": "adm-outreach-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ADM · Envío de outreach por correo (Resend) y WhatsApp (Cloud API).",
+  "scripts": {
+    "email": "node src/email.js",
+    "whatsapp": "node src/whatsapp.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": { "pg": "^8.11.5" }
+}

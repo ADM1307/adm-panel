@@ -1,0 +1,17 @@
+{
+  "name": "adm-scraper-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ADM · Servicio de prospección de negocios locales vía Google Places (New).",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "prospectar": "node src/index.js",
+    "test:conexion": "node src/db.js --ping"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "pg": "^8.11.5"
+  }
+}

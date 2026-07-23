@@ -1,0 +1,10 @@
+{
+  "name": "adm-booking-service",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ADM · Agenda de citas con Cal.com (link prellenado + webhook).",
+  "scripts": { "webhook": "node src/calcom.js" },
+  "engines": { "node": ">=20" },
+  "dependencies": { "pg": "^8.11.5" }
+}

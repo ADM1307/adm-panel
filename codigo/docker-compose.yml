@@ -1,0 +1,63 @@
+# =====================================================================
+#  ADM · Motor de Ventas Autónomo — infraestructura auto-hospedada
+#  1 VPS corre todo. Objetivo de costo: < $40 USD/mes.
+#  Levanta:  docker compose up -d
+# =====================================================================
+services:
+  # ------------------------------------------------------------------
+  # Base de datos (Postgres). Alternativa gestionada: Supabase (free tier).
+  # ------------------------------------------------------------------
+  postgres:
+    image: postgres:16-alpine
+    container_name: adm_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-adm}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-cambia_esto}
+      POSTGRES_DB: ${POSTGRES_DB:-adm}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      # Migraciones y semillas se aplican en el primer arranque:
+      - ./db/migrations:/docker-entrypoint-initdb.d/1-migrations:ro
+      - ./db/seeds:/docker-entrypoint-initdb.d/2-seeds:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-adm} -d ${POSTGRES_DB:-adm}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ------------------------------------------------------------------
+  # n8n · orquestador visual (crons, secuencias, webhooks).
+  # ------------------------------------------------------------------
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: adm_n8n
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      - N8N_HOST=${N8N_HOST:-localhost}
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=${N8N_PROTOCOL:-http}
+      - GENERIC_TIMEZONE=America/Chihuahua
+      - TZ=America/Chihuahua
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=${N8N_USER:-admin}
+      - N8N_BASIC_AUTH_PASSWORD=${N8N_PASSWORD:-cambia_esto}
+      # Credenciales disponibles para los workflows:
+      - DATABASE_URL=postgresql://${POSTGRES_USER:-adm}:${POSTGRES_PASSWORD:-cambia_esto}@postgres:5432/${POSTGRES_DB:-adm}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - GOOGLE_PLACES_API_KEY=${GOOGLE_PLACES_API_KEY}
+      - RESEND_API_KEY=${RESEND_API_KEY}
+    ports:
+      - "5678:5678"
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./n8n:/workflows:ro
+
+volumes:
+  pgdata:
+  n8n_data:

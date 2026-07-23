@@ -1,0 +1,17 @@
+{
+  "name": "adm-agent-core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ADM · Núcleo del agente: calificar (Haiku), personalizar y responder (Sonnet).",
+  "main": "src/qualify.js",
+  "scripts": {
+    "calificar": "node src/qualify.js",
+    "ofertar": "node src/offer.js",
+    "personalizar": "node src/personalize.js"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "pg": "^8.11.5"
+  }
+}

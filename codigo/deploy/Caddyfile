@@ -1,0 +1,46 @@
+# =====================================================================
+#  ADM · Panel de Control — Caddy (HTTPS automático con Let's Encrypt)
+#  Sirve el panel de una sola página. Reemplaza el dominio por el tuyo.
+#  Valídalo antes de arrancar:  caddy validate --config ./Caddyfile
+# =====================================================================
+
+# --- Sitio con dominio + HTTPS automático ---------------------------
+# Apunta un registro A de este dominio a la IP de tu VPS (puertos 80 y 443 abiertos).
+# La variable {$PANEL_DOMAIN} se toma del archivo .env (ver .env.example).
+{$PANEL_DOMAIN:panel.atlasdigitalmark.com} {
+    root * /srv
+    file_server
+    encode gzip zstd
+
+    # ---- Protección con usuario/contraseña (RECOMENDADO) ----
+    # El panel muestra datos de prospectos y la lista do_not_contact:
+    # NO lo dejes abierto en producción. Para activar el candado:
+    #   1) Genera el hash de tu contraseña:
+    #        docker run --rm caddy:2.8 caddy hash-password --plaintext 'TU_PASSWORD'
+    #   2) Pega el hash en PANEL_PASSWORD_HASH dentro de .env
+    #   3) Descomenta el bloque de abajo y reinicia:  docker compose up -d
+    #
+    # basic_auth {
+    #     {$PANEL_USER:adm} {$PANEL_PASSWORD_HASH}
+    # }
+
+    header {
+        # Cabeceras de seguridad básicas
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy strict-origin-when-cross-origin
+    }
+
+    log {
+        output file /var/log/caddy/access.log
+    }
+}
+
+# --- Acceso rápido por IP:8080 (HTTP, sin candado) ------------------
+# Útil para probar de inmediato sin dominio:  http://IP-DE-TU-VPS:8080
+# Quítalo en producción si no lo necesitas.
+:8080 {
+    root * /srv
+    file_server
+    encode gzip
+}

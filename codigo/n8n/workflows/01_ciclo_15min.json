@@ -1,0 +1,32 @@
+{
+  "name": "ADM · Ciclo cada 15 min",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [ { "field": "minutes", "minutesInterval": 15 } ] }
+      },
+      "id": "trigger-15min",
+      "name": "Cada 15 min",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [ 320, 300 ]
+    },
+    {
+      "parameters": {
+        "command": "cd /workflows/.. && ./scripts/cycle.sh"
+      },
+      "id": "run-cycle",
+      "name": "Correr ciclo ADM",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [ 560, 300 ]
+    }
+  ],
+  "connections": {
+    "Cada 15 min": { "main": [ [ { "node": "Correr ciclo ADM", "type": "main", "index": 0 } ] ] }
+  },
+  "active": false,
+  "settings": { "timezone": "America/Chihuahua" },
+  "pinData": {},
+  "meta": { "descripcion": "Corre scripts/cycle.sh: personaliza, envia (email/whatsapp) y responde. Ajusta la ruta del comando a donde vive el repo en tu VPS." }
+}
