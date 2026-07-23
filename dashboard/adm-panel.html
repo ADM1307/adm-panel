@@ -402,6 +402,9 @@ let INBOX = [
    cuerpo:'Hola, equipo de MY DENT:\n\nSoy Sofía, asesora digital de ADM. Los encontré en Doctoralia y noté que hay una buena oportunidad de captar pacientes con una web propia con agenda 24/7 y reseñas, en vez de depender del directorio.\n\nEn ADM ayudamos a una clínica a llegar a 1ª página de Google en 90 días y llenar su agenda de valoraciones. ¿Les mando una auditoría express gratis con 3 mejoras? Sin compromiso.\n\nSofía · asesora digital de ADM · atlasdigitalmark.com\nResponde BAJA para no recibir más mensajes.'},
 ];
 
+// Llamadas grabadas por lead (las escribe el módulo de voz; se ven en el detalle del lead).
+let LLAMADAS = [];
+
 let EXEC = [
   {job:'secuencias_outreach', desc:'Envía el siguiente toque de las cadencias activas', sec:14*60},
   {job:'calificacion_horaria', desc:'Puntúa leads nuevos con Claude Haiku', sec:47*60},
@@ -705,8 +708,22 @@ function openLead(id){
     <div class="k" style="margin-top:16px;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700">
       ${contactado?'✅ Contacto automático enviado por 3 medios':'✉️ Mensajes que el agente enviará por 3 medios'}</div>
     ${channelMsgs(l,o).map(x=>`<div style="margin-top:9px"><span class="badge-canal bc-${x.c}">${x.c}</span><div class="msg-body">${x.t}</div></div>`).join('')}
+    <div class="k" style="margin-top:16px;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700">📞 Llamadas grabadas</div>
+    ${llamadasHtml(l.empresa)}
   `;
   document.getElementById('modal').classList.add('show');
+}
+function llamadasHtml(empresa){
+  const calls = LLAMADAS.filter(c => c.empresa === empresa);
+  if(!calls.length) return '<div class="sub2" style="margin-top:6px">Sin llamadas registradas todavía. Cuando el agente de voz llame a este lead, aquí aparecerá la grabación, el resultado y el resumen.</div>';
+  return calls.map(c => {
+    const min = Math.floor((c.duracion_seg||0)/60), seg = (c.duracion_seg||0)%60;
+    return `<div class="msg-body" style="margin-top:8px">
+      <b>${c.fecha}</b> · ${c.resultado||'—'} · ${min}m ${seg}s
+      ${c.resumen?`<br><span class="sub2">${c.resumen}</span>`:''}
+      ${c.grabacion_url?`<br><audio controls preload="none" style="width:100%;margin-top:6px" src="${c.grabacion_url}"></audio>`:''}
+    </div>`;
+  }).join('');
 }
 function closeModal(){document.getElementById('modal').classList.remove('show');}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
@@ -725,6 +742,7 @@ async function cargarDatos(){
     }
     if(Array.isArray(d.inbox)) INBOX = d.inbox;
     if(Array.isArray(d.citas)) { CITAS.length=0; d.citas.forEach(c=>CITAS.push(c)); }
+    if(Array.isArray(d.llamadas)) LLAMADAS = d.llamadas;
     if(d.last_run){
       const f = new Date(d.last_run);
       const el = document.getElementById('lastRun');

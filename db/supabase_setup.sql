@@ -1,7 +1,4 @@
--- =====================================================================
---  ADM · Setup completo para Supabase (pega TODO esto en el SQL Editor)
---  Incluye: esquema (001) + oferta (002) + verticales + secuencias/config
--- =====================================================================
+-- ADM · Setup completo para Supabase (esquema + oferta + verticales + secuencias/config)
 
 -- =====================================================================
 --  ADM · Motor de Ventas Autónomo con IA
@@ -392,8 +389,6 @@ ORDER BY total DESC;
 
 COMMIT;
 
--- ===== 002_oferta =====
-
 -- =====================================================================
 --  ADM · Migración 002 · Oferta a la medida por lead
 --  El agente, tras calificar, arma una oferta según las señales del
@@ -413,8 +408,6 @@ CREATE INDEX IF NOT EXISTS ix_leads_sin_oferta
   WHERE oferta IS NULL;
 
 COMMIT;
-
--- ===== seed verticales =====
 
 -- =====================================================================
 --  ADM · Semilla de VERTICALES (giro → dolor/ángulo/servicio/persona/prueba)
@@ -518,8 +511,6 @@ VALUES
 
 COMMIT;
 
--- ===== seed secuencias/config =====
-
 -- =====================================================================
 --  ADM · Semilla de USUARIOS, SECUENCIAS/PLANTILLAS y CONFIGURACIÓN
 --  Cadencia máx. 3 toques con valor nuevo. Cada mensaje: 1 hallazgo +
@@ -543,8 +534,8 @@ INSERT INTO configuracion (clave, valor, descripcion) VALUES
   'Si human_in_the_loop es false, solo se auto-envían mensajes a leads con score >= a este valor.'),
 ('cadencia_max_toques', '3'::jsonb,
   'Máximo de toques de outreach por lead antes de pausar.'),
-('horario_envio', '{"inicio":"09:00","fin":"19:00","dias":[1,2,3,4,5,6],"tz":"America/Chihuahua"}'::jsonb,
-  'Ventana horaria permitida para enviar mensajes y hacer llamadas.'),
+('horario_envio', '{"inicio":"09:00","fin":"14:00","dias":[1,2,3,4,5,6],"tz":"America/Chihuahua"}'::jsonb,
+  'Ventana horaria permitida para CONTACTAR (9:00–14:00). El scraper trabaja 24/7.'),
 ('firma_agente', '"Sofía, asesora digital de ADM · Atlas Digital Marketing"'::jsonb,
   'El agente SIEMPRE se identifica como asesora digital de ADM (compliance).'),
 ('aviso_privacidad_url', '"https://atlasdigitalmark.com/privacidad"'::jsonb,

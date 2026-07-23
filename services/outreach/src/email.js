@@ -62,8 +62,10 @@ async function main() {
     try {
       let pid = 'dry-' + m.id.slice(0, 8);
       if (!DRY) {
+        // Reply-To: las respuestas del prospecto llegan a la bandeja de ADM.
+        const replyTo = process.env.EMAIL_REPLY_TO || 'contact@atlasdigitalmark.com';
         pid = await enviarResend({ from, to: m.destino, subject: m.asunto, html,
-          replyTo: 'hola@atlasdigitalmark.com', listUnsub });
+          replyTo, listUnsub });
       }
       await pool.query(
         `UPDATE mensajes SET estado='enviado', proveedor='resend', proveedor_msg_id=$2, enviado_en=now() WHERE id=$1`,

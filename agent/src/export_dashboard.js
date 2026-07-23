@@ -36,12 +36,26 @@ async function main() {
     FROM citas ci JOIN leads l ON l.id=ci.lead_id
     WHERE ci.estado <> 'cancelada' ORDER BY ci.inicio LIMIT 20`);
 
+  // Llamadas grabadas por lead (para el pipeline / detalle de cada lead)
+  const { rows: llamadas } = await pool.query(`
+    SELECT l.empresa,
+           to_char(ll.creado_en,'DD/MM HH24:MI') AS fecha,
+           COALESCE(ll.resultado,'') AS resultado,
+           COALESCE(ll.duracion_seg,0) AS duracion_seg,
+           COALESCE(ll.resumen,'') AS resumen,
+           ll.grabacion_url,
+           COALESCE(ll.transcripcion,'') AS transcripcion
+    FROM llamadas ll JOIN leads l ON l.id = ll.lead_id
+    ORDER BY ll.creado_en DESC LIMIT 200`);
+
   const data = {
     last_run: new Date().toISOString(),
     leads: leads.map((l) => [l.empresa, l.vertical, l.ciudad, l.hallazgo, l.score, l.estado, l.contacto]),
     inbox: inbox.map((m) => ({ id: m.id, empresa: m.empresa, contacto: m.contacto, canal: m.canal,
       estado: m.estado, modelo: m.modelo, asunto: m.asunto, cuerpo: m.cuerpo })),
     citas,
+    llamadas: llamadas.map((c) => ({ empresa: c.empresa, fecha: c.fecha, resultado: c.resultado,
+      duracion_seg: c.duracion_seg, resumen: c.resumen, grabacion_url: c.grabacion_url, transcripcion: c.transcripcion })),
   };
   fs.writeFileSync(OUT, JSON.stringify(data, null, 2));
   console.log(`📤 data.json escrito: ${leads.length} leads, ${inbox.length} borradores, ${citas.length} citas → ${OUT}`);
