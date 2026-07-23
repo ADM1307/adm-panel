@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADM · Motor de Ventas — Panel de Control</title>
+<style>
+  :root{
+    --brand:#1F6FEB; --brand-2:#0F2A43; --brand-ink:#0B1F33;
+    --ok:#1B7F5A; --warn:#B8860B; --danger:#C0392B; --info:#6C5CE7;
+    --bg:#F4F7FB; --surface:#FFFFFF; --surface-2:#EEF3F9; --line:#DCE4EE;
+    --text:#16222F; --muted:#5C6B7A; --shadow:0 1px 3px rgba(16,42,67,.08),0 8px 24px rgba(16,42,67,.06);
+    --radius:14px;
+  }
+  html[data-theme="dark"]{
+    --bg:#0B1522; --surface:#111E2E; --surface-2:#0E1A28; --line:#223242;
+    --text:#E7EEF6; --muted:#93A4B6; --brand-2:#DDE9F7;
+    --shadow:0 1px 3px rgba(0,0,0,.4),0 10px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+       background:var(--bg);color:var(--text);font-size:14px;line-height:1.5}
+  a{color:var(--brand);text-decoration:none}
+  .app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}
+
+  /* ---------- Sidebar ---------- */
+  .side{background:linear-gradient(180deg,var(--brand-2),#0a1f33);color:#fff;padding:0;position:sticky;top:0;height:100vh;overflow-y:auto}
+  html[data-theme="dark"] .side{background:linear-gradient(180deg,#0d1a29,#08121d);border-right:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:11px;padding:20px 18px;border-bottom:1px solid rgba(255,255,255,.09)}
+  .logo{width:38px;height:38px;border-radius:10px;background:var(--brand);display:grid;place-items:center;font-weight:800;font-size:16px;color:#fff;letter-spacing:.5px;box-shadow:0 4px 12px rgba(31,111,235,.5)}
+  .brand b{font-size:15px;letter-spacing:.2px}
+  .brand small{display:block;color:#9DB4CE;font-size:11px;font-weight:500}
+  .nav{padding:12px 10px;display:flex;flex-direction:column;gap:2px}
+  .nav button{display:flex;align-items:center;gap:11px;width:100%;background:none;border:0;color:#C3D3E6;
+       padding:11px 13px;border-radius:10px;cursor:pointer;font-size:13.5px;font-weight:500;text-align:left;transition:.15s}
+  .nav button .ic{width:18px;text-align:center;opacity:.9}
+  .nav button:hover{background:rgba(255,255,255,.07);color:#fff}
+  .nav button.active{background:var(--brand);color:#fff;box-shadow:0 6px 16px rgba(31,111,235,.4)}
+  .nav .badge{margin-left:auto;background:rgba(255,255,255,.18);border-radius:20px;padding:1px 8px;font-size:11px;font-weight:700}
+  .side-foot{padding:14px 18px;border-top:1px solid rgba(255,255,255,.09);color:#8fa6bf;font-size:11px}
+  .pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2ecc71;margin-right:6px;box-shadow:0 0 0 0 rgba(46,204,113,.6);animation:p 2s infinite}
+  @keyframes p{0%{box-shadow:0 0 0 0 rgba(46,204,113,.5)}70%{box-shadow:0 0 0 7px rgba(46,204,113,0)}100%{box-shadow:0 0 0 0 rgba(46,204,113,0)}}
+
+  /* ---------- Main ---------- */
+  .main{padding:0;overflow:auto}
+  .topbar{display:flex;align-items:center;gap:14px;padding:16px 26px;background:var(--surface);
+          border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+  .topbar h1{font-size:18px;margin:0;font-weight:700}
+  .topbar .sub{color:var(--muted);font-size:12.5px}
+  .spacer{flex:1}
+  .btn{border:1px solid var(--line);background:var(--surface);color:var(--text);padding:8px 14px;border-radius:10px;
+       cursor:pointer;font-size:13px;font-weight:600;display:inline-flex;align-items:center;gap:7px;transition:.15s}
+  .btn:hover{border-color:var(--brand);color:var(--brand)}
+  .btn.primary{background:var(--brand);border-color:var(--brand);color:#fff}
+  .btn.primary:hover{filter:brightness(1.07);color:#fff}
+  .btn.sm{padding:5px 10px;font-size:12px}
+  .content{padding:24px 26px;max-width:1240px}
+  section.view{display:none;animation:fade .25s}
+  section.view.show{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  h2.title{font-size:16px;margin:2px 0 14px;font-weight:700}
+  .muted{color:var(--muted)}
+
+  /* KPI cards */
+  .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-bottom:20px}
+  .kpi{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .kpi .lbl{color:var(--muted);font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.4px}
+  .kpi .val{font-size:30px;font-weight:800;margin-top:6px;letter-spacing:-.5px}
+  .kpi .foot{font-size:11.5px;margin-top:4px;color:var(--muted)}
+  .kpi .up{color:var(--ok);font-weight:700}
+  .kpi .bar{position:absolute;left:0;bottom:0;height:4px;background:var(--brand)}
+  .kpi:nth-child(1) .bar{background:var(--info)} .kpi:nth-child(2) .bar{background:var(--brand)}
+  .kpi:nth-child(3) .bar{background:var(--warn)} .kpi:nth-child(4) .bar{background:#e17055}
+  .kpi:nth-child(5) .bar{background:var(--ok)}
+
+  .grid2{display:grid;grid-template-columns:1.3fr 1fr;gap:18px}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+  .card h3{margin:0 0 4px;font-size:14.5px;font-weight:700}
+  .card .hint{color:var(--muted);font-size:12px;margin-bottom:14px}
+  .card-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+
+  /* Bar list (leads por vertical) */
+  .blist{display:flex;flex-direction:column;gap:11px}
+  .brow{display:grid;grid-template-columns:150px 1fr 40px;align-items:center;gap:10px;font-size:12.5px}
+  .brow .track{background:var(--surface-2);border-radius:8px;height:12px;overflow:hidden}
+  .brow .fill{height:100%;background:linear-gradient(90deg,var(--brand),#4f9bff);border-radius:8px}
+  .brow .n{text-align:right;font-weight:700}
+
+  /* Ejecuciones */
+  .exec{display:flex;flex-direction:column;gap:10px}
+  .exrow{display:flex;align-items:center;gap:12px;padding:11px 12px;border:1px solid var(--line);border-radius:11px;background:var(--surface-2)}
+  .exrow .dot{width:9px;height:9px;border-radius:50%;background:var(--ok);flex:0 0 auto}
+  .exrow .job{font-weight:700;font-size:13px}
+  .exrow .desc{font-size:11.5px;color:var(--muted)}
+  .exrow .cd{margin-left:auto;font-variant-numeric:tabular-nums;font-weight:700;color:var(--brand);font-size:13px;background:var(--surface);border:1px solid var(--line);padding:5px 10px;border-radius:8px}
+
+  /* Tables */
+  .toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+  input,select,textarea{font-family:inherit;font-size:13px;color:var(--text);background:var(--surface);
+       border:1px solid var(--line);border-radius:9px;padding:8px 11px;outline:none}
+  input:focus,select:focus,textarea:focus{border-color:var(--brand)}
+  .search{flex:1;min-width:200px}
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead th{text-align:left;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.4px;
+       padding:10px 12px;border-bottom:2px solid var(--line);position:sticky;top:0;background:var(--surface)}
+  tbody td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:middle}
+  tbody tr:hover{background:var(--surface-2)}
+  .tablewrap{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+  .tablescroll{max-height:560px;overflow:auto}
+  .company{font-weight:700}
+  .sub2{color:var(--muted);font-size:11.5px}
+
+  .pill{display:inline-block;padding:3px 9px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap}
+  .p-descubierta{background:#eae7fb;color:#5b4bcf} .p-calificada{background:#dff3ff;color:#1a6aa8}
+  .p-descartada{background:#eceff2;color:#7b8794} .p-contactada{background:#fff2d6;color:#9a6d00}
+  .p-respondio{background:#ffe9df;color:#b5502a} .p-en_conversacion{background:#ffe0ef;color:#b41e6f}
+  .p-cita_agendada{background:#dff7ea;color:#12805a} .p-handoff{background:#e2ecff;color:#2a53b8}
+  .p-ganada{background:#d3f5d8;color:#137a2b} .p-perdida{background:#f7dede;color:#a3312a}
+  html[data-theme="dark"] .pill{filter:brightness(.85) saturate(1.2)}
+  .score{font-weight:800;font-variant-numeric:tabular-nums}
+  .sc-hi{color:var(--ok)} .sc-md{color:var(--warn)} .sc-lo{color:var(--muted)}
+
+  .chip{display:inline-block;background:var(--surface-2);border:1px solid var(--line);border-radius:20px;padding:2px 9px;font-size:11px;color:var(--muted);margin:2px 3px 0 0}
+
+  /* Verticales cards */
+  .vgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+  .vcard{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+  .vcard .vtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+  .vcard h4{margin:0;font-size:14.5px}
+  .vcard .ticket{font-size:12px;font-weight:800;color:var(--ok)}
+  .vfield{margin:8px 0}
+  .vfield .k{font-size:10.5px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700}
+  .vfield .v{font-size:12.8px}
+
+  /* Secuencias */
+  .seqflow{display:flex;align-items:stretch;gap:0;flex-wrap:wrap}
+  .step{flex:1;min-width:220px;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:15px;box-shadow:var(--shadow);position:relative}
+  .step .num{width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;display:grid;place-items:center;font-weight:800;font-size:13px}
+  .step .ch{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+  .step .canal{font-weight:700;font-size:13.5px;text-transform:capitalize}
+  .step .wait{font-size:11px;color:var(--muted);margin-left:auto}
+  .step .tmpl{font-size:12px;color:var(--muted);background:var(--surface-2);border-radius:9px;padding:9px;border:1px dashed var(--line);white-space:pre-wrap;max-height:150px;overflow:auto}
+  .arrow{align-self:center;color:var(--muted);font-size:22px;padding:0 6px}
+
+  /* Conversaciones / inbox */
+  .inbox{display:grid;grid-template-columns:1fr;gap:12px}
+  .msg{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:15px;box-shadow:var(--shadow)}
+  .msg .mh{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+  .msg .who{font-weight:700}
+  .msg .body{background:var(--surface-2);border:1px solid var(--line);border-radius:10px;padding:11px;font-size:13px;white-space:pre-wrap}
+  .msg .acts{display:flex;gap:8px;margin-top:11px;flex-wrap:wrap}
+  .badge-canal{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px}
+  .bc-email{background:#e2ecff;color:#2a53b8}.bc-whatsapp{background:#dcf7e3;color:#12805a}.bc-voz{background:#efe6ff;color:#6c5cd0}
+  .tag-ok{color:var(--ok);font-weight:700}
+
+  /* Citas */
+  .cita{display:flex;align-items:center;gap:14px;padding:13px;border:1px solid var(--line);border-radius:12px;background:var(--surface);margin-bottom:10px;box-shadow:var(--shadow)}
+  .cita .date{text-align:center;background:var(--surface-2);border-radius:10px;padding:8px 12px;min-width:60px}
+  .cita .date .d{font-size:20px;font-weight:800;line-height:1}
+  .cita .date .m{font-size:10px;text-transform:uppercase;color:var(--muted);font-weight:700}
+  .cita .info{flex:1}
+
+  /* Config */
+  .cfg{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .switch{position:relative;display:inline-block;width:46px;height:26px}
+  .switch input{opacity:0;width:0;height:0}
+  .slider{position:absolute;inset:0;background:var(--line);border-radius:20px;cursor:pointer;transition:.2s}
+  .slider:before{content:"";position:absolute;height:20px;width:20px;left:3px;top:3px;background:#fff;border-radius:50%;transition:.2s}
+  .switch input:checked+.slider{background:var(--brand)}
+  .switch input:checked+.slider:before{transform:translateX(20px)}
+  .cfgrow{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line)}
+  .cfgrow:last-child{border-bottom:0}
+  .cfgrow .k{font-weight:600}
+  .cfgrow .d{font-size:11.5px;color:var(--muted);max-width:340px}
+  .dnc{display:flex;align-items:center;justify-content:space-between;padding:8px 10px;border:1px solid var(--line);border-radius:9px;margin-bottom:7px;font-size:12.5px;background:var(--surface-2)}
+
+  .empty{text-align:center;color:var(--muted);padding:30px}
+  @media(max-width:980px){.app{grid-template-columns:1fr}.side{position:fixed;left:-260px;transition:.2s;z-index:30}.side.open{left:0}
+    .kpis{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.cfg{grid-template-columns:1fr}
+    .menu-toggle{display:inline-flex!important}}
+  .menu-toggle{display:none}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Sidebar -->
+  <aside class="side" id="side">
+    <div class="brand">
+      <div class="logo">ADM</div>
+      <div><b>Atlas Digital</b><small>Motor de Ventas · IA</small></div>
+    </div>
+    <nav class="nav" id="nav"></nav>
+    <div class="side-foot">
+      <div><span class="pulse"></span>Agente activo · 24/7</div>
+      <div style="margin-top:6px">Chihuahua, MX · v0.1</div>
+    </div>
+  </aside>
+
+  <!-- Main -->
+  <div class="main">
+    <div class="topbar">
+      <button class="btn sm menu-toggle" onclick="document.getElementById('side').classList.toggle('open')">☰</button>
+      <div>
+        <h1 id="viewTitle">Panel</h1>
+        <div class="sub" id="viewSub">Resumen operativo del agente de ventas</div>
+      </div>
+      <div class="spacer"></div>
+      <button class="btn sm" id="themeBtn" onclick="toggleTheme()">🌙 Oscuro</button>
+      <button class="btn sm primary" onclick="alert('En producción: dispara services/scraper (prospección Google Places).')">▶ Prospectar ahora</button>
+    </div>
+
+    <div class="content">
+      <!-- ===== PANEL ===== -->
+      <section class="view show" id="v-panel">
+        <div class="kpis" id="kpis"></div>
+        <div class="grid2">
+          <div class="card">
+            <div class="card-head"><div><h3>Leads por vertical</h3><div class="hint">Dónde está trabajando el motor</div></div></div>
+            <div class="blist" id="vertBars"></div>
+          </div>
+          <div class="card">
+            <div class="card-head"><div><h3>Próximas ejecuciones automáticas</h3><div class="hint"><span class="pulse"></span>El sistema corre solo, sin chat abierto</div></div></div>
+            <div class="exec" id="execList"></div>
+          </div>
+        </div>
+        <div class="card" style="margin-top:18px">
+          <div class="card-head"><div><h3>Embudo del pipeline</h3><div class="hint">De descubierta hasta cita agendada</div></div></div>
+          <div id="funnel"></div>
+        </div>
+      </section>
+
+      <!-- ===== PROSPECTOS ===== -->
+      <section class="view" id="v-leads">
+        <div class="toolbar">
+          <input class="search" id="q" placeholder="🔎 Buscar empresa, ciudad, contacto…" oninput="renderLeads()">
+          <select id="fVert" onchange="renderLeads()"><option value="">Todas las verticales</option></select>
+          <select id="fEstado" onchange="renderLeads()"><option value="">Todos los estados</option></select>
+          <button class="btn sm" onclick="clearFilters()">Limpiar</button>
+        </div>
+        <div class="tablewrap"><div class="tablescroll"><table>
+          <thead><tr><th>Empresa</th><th>Vertical</th><th>Ciudad</th><th>Hallazgo clave</th><th>Score</th><th>Estado</th></tr></thead>
+          <tbody id="leadsBody"></tbody>
+        </table></div></div>
+        <div class="muted" style="margin-top:10px;font-size:12px" id="leadsCount"></div>
+      </section>
+
+      <!-- ===== VERTICALES ===== -->
+      <section class="view" id="v-verticales">
+        <h2 class="title">Verticales · el cerebro de personalización (editable sin código)</h2>
+        <div class="vgrid" id="vgrid"></div>
+      </section>
+
+      <!-- ===== SECUENCIAS ===== -->
+      <section class="view" id="v-secuencias">
+        <h2 class="title">Secuencia base · máx. 3 toques con valor nuevo</h2>
+        <div class="seqflow" id="seqflow"></div>
+        <div class="card" style="margin-top:18px">
+          <h3>Reglas de la cadencia</h3>
+          <div class="hint">Cada mensaje: 1 hallazgo concreto + 1 prueba social (como referencia) + 1 CTA de baja fricción + opt-out. Respeta horario 9:00–19:00 (Chihuahua) y la lista do_not_contact.</div>
+        </div>
+      </section>
+
+      <!-- ===== CITAS ===== -->
+      <section class="view" id="v-citas">
+        <h2 class="title">Agenda de citas de diagnóstico → handoff a Fernando</h2>
+        <div id="citasList"></div>
+      </section>
+
+      <!-- ===== CONVERSACIONES ===== -->
+      <section class="view" id="v-conversaciones">
+        <h2 class="title">Bandeja · aprobar mensajes (human-in-the-loop)</h2>
+        <div class="hint muted" style="margin-bottom:14px">Con <b>human-in-the-loop</b> activo, cada mensaje del agente espera tu visto bueno antes de salir. Apruébalos, edítalos o recházalos.</div>
+        <div class="inbox" id="inbox"></div>
+      </section>
+
+      <!-- ===== CONFIGURACIÓN ===== -->
+      <section class="view" id="v-config">
+        <h2 class="title">Configuración · operación y cumplimiento (LFPDPPP)</h2>
+        <div class="cfg">
+          <div class="card">
+            <h3>Operación del agente</h3><div class="hint">Controla cómo y cuándo actúa el motor.</div>
+            <div id="cfgOps"></div>
+          </div>
+          <div class="card">
+            <h3>Cumplimiento MX</h3><div class="hint">Salvaguardas que van en el código, no son opcionales.</div>
+            <div class="cfgrow"><div><div class="k">Opt-out en cada mensaje</div><div class="d">“Responde BAJA para no recibir más mensajes.”</div></div><span class="tag-ok">Activo ✓</span></div>
+            <div class="cfgrow"><div><div class="k">Aviso de privacidad</div><div class="d">Se referencia en el primer contacto.</div></div><a href="#" onclick="return false">/privacidad</a></div>
+            <div class="cfgrow"><div><div class="k">Identificación como asistente virtual</div><div class="d">El agente “Sofía” nunca finge ser humano.</div></div><span class="tag-ok">Activo ✓</span></div>
+            <div style="margin-top:14px">
+              <div class="k" style="font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin-bottom:8px">Lista do_not_contact (supresión)</div>
+              <div id="dncList"></div>
+              <div style="display:flex;gap:8px;margin-top:8px">
+                <input id="dncInput" class="search" placeholder="correo o teléfono a suprimir">
+                <button class="btn sm" onclick="addDnc()">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============ DATOS DEMO (Chihuahua) — reemplazables por tu API ============ */
+const VERT = [
+  {clave:'restaurantes', nombre:'Restaurantes y bares', dolor:'Reservas y pedidos se pierden en DMs; menú desactualizado.', angulo:'Convertir “comida cerca de mí” en reservaciones con agenda + WhatsApp.', servicio:'Sitio Pro (agenda + catálogo + WhatsApp)', persona:'Dueño / gerente', prueba:'+3.2× reservas en un restaurante', ticket:18000},
+  {clave:'clinicas', nombre:'Clínicas y consultorios', dolor:'Agenda solo por teléfono; poca credibilidad sin web.', angulo:'Llenar la agenda con pacientes que ya buscan tratamiento.', servicio:'Sitio Pro con agenda + Arranque', persona:'Doctor(a) / admin', prueba:'1ª página de Google en 90 días (salud)', ticket:22000},
+  {clave:'inmobiliarias', nombre:'Inmobiliarias y agentes', dolor:'Propiedades sin catálogo; leads fríos sin seguimiento.', angulo:'Catálogo web + captura y seguimiento automático de leads.', servicio:'Sitio Pro o Agente de IA', persona:'Broker / dueño', prueba:'ROAS promedio 4.7× en captación', ticket:25000},
+  {clave:'retail', nombre:'Retail y tiendas', dolor:'Venden por mensajes; sin tienda en línea ni escala.', angulo:'Catálogo/e-commerce + campañas para vender fuera del mostrador.', servicio:'Sitio Pro/Custom + Escala', persona:'Dueño(a)', prueba:'+180% ventas (moda)', ticket:20000},
+  {clave:'gimnasios', nombre:'Gimnasios y fitness', dolor:'Altas/bajas a mano; sin captación digital.', angulo:'Landing de inscripción + campañas + recordatorios.', servicio:'Sitio Plus/Pro + Arranque', persona:'Dueño / gerente', prueba:'91% de renovación de clientes ADM', ticket:15000},
+  {clave:'despachos', nombre:'Despachos profesionales', dolor:'Sin presencia seria se pierde confianza.', angulo:'Sitio que transmite autoridad + consultas calificadas.', servicio:'Sitio Pro + Arranque', persona:'Socio / titular', prueba:'+120 proyectos entregados', ticket:22000},
+  {clave:'hoteles', nombre:'Hoteles y hospedaje', dolor:'Dependen de OTAs con comisión.', angulo:'Reservación directa desde su web.', servicio:'Sitio Custom + Escala', persona:'Gerente / dueño', prueba:'ROAS 4.7× vendiendo directo', ticket:35000},
+  {clave:'automotriz', nombre:'Talleres y automotriz', dolor:'No aparecen en “taller cerca de mí”.', angulo:'Google local + agenda de servicios + reseñas.', servicio:'Sitio Pro + SEO local', persona:'Dueño / gerente', prueba:'+3× contactos por presencia local', ticket:16000},
+  {clave:'educacion', nombre:'Escuelas y cursos', dolor:'Inscripciones sin embudo digital.', angulo:'Landing de inscripción + campañas de temporada.', servicio:'Sitio Pro + Arranque + Agente IA', persona:'Director(a)', prueba:'+120 proyectos con embudos medibles', ticket:18000},
+  {clave:'salud_bienestar', nombre:'Salud y bienestar', dolor:'Agenda a mano; cuesta transmitir confianza.', angulo:'Web con agenda + reseñas + contenido de confianza.', servicio:'Sitio Plus/Pro + Arranque', persona:'Profesional / dueño', prueba:'1ª página de Google en 90 días', ticket:15000},
+];
+const VNAME = Object.fromEntries(VERT.map(v=>[v.clave,v.nombre]));
+
+const LEADS = [
+  ['Tacos El Güero','restaurantes','Chihuahua','No tiene sitio web y solo 8 reseñas en Google',88,'calificada','Luis Herrera · Dueño'],
+  ['Mariscos La Perla','restaurantes','Chihuahua','Web sin versión móvil; menú desactualizado',81,'contactada','Rosa M. · Gerente'],
+  ['Clínica Dental Sonrisa','clinicas','Delicias','Agenda solo por teléfono; sin reseñas recientes',90,'cita_agendada','Dra. Paola Ríos'],
+  ['Estética Bella Vida','clinicas','Chihuahua','Instagram activo pero sin web ni agenda online',84,'respondio','Karla Domínguez'],
+  ['Spa Serena','salud_bienestar','Chihuahua','Sin web; agenda por WhatsApp saturado',76,'contactada','Mónica Salas'],
+  ['Inmobiliaria Norte','inmobiliarias','Ciudad Juárez','Propiedades solo en Facebook, sin catálogo',86,'en_conversacion','Arq. Diego Fierro'],
+  ['Bienes Raíces del Valle','inmobiliarias','Delicias','No corre anuncios; leads sin seguimiento',72,'calificada','Sergio Ontiveros'],
+  ['Boutique Luna','retail','Chihuahua','Vende por DM; sin tienda en línea',79,'contactada','Ana Sofía León'],
+  ['Zapatería El Paso','retail','Cuauhtémoc','Web vieja (2016), no responsiva',68,'descubierta','—'],
+  ['PowerFit Gym','gimnasios','Chihuahua','Sin landing de inscripción; redes abandonadas',83,'respondio','Iván Prieto'],
+  ['Studio Yoga Om','gimnasios','Chihuahua','Sin web; depende del paso peatonal',65,'descubierta','—'],
+  ['Despacho Contable RM','despachos','Chihuahua','Sin presencia digital; solo referidos',77,'contactada','C.P. Rocío Máynez'],
+  ['Bufete Legal Fierro','despachos','Parral','Web básica sin captación de consultas',70,'calificada','Lic. Andrés Fierro'],
+  ['Hotel Casa Grande','hoteles','Chihuahua','100% dependiente de OTAs; sin reservas directas',87,'cita_agendada','Gabriela Nieto'],
+  ['Motel Camino Real','hoteles','Camargo','Sin web; solo teléfono',60,'descartada','—'],
+  ['Taller Mecánico Díaz','automotriz','Chihuahua','No aparece en Google Maps optimizado',74,'contactada','Jorge Díaz'],
+  ['Llantera Express','automotriz','Delicias','Sin web ni agenda de servicios',66,'descubierta','—'],
+  ['Academia Inglés Vivo','educacion','Chihuahua','Inscripciones sin embudo; compite con apps',78,'respondio','Miss Laura Cano'],
+  ['Autoescuela Segura','educacion','Cuauhtémoc','Web lenta; sin formulario de registro',63,'descubierta','—'],
+  ['Nutrióloga Ana Vega','salud_bienestar','Chihuahua','Agenda por DM; sin web de confianza',80,'en_conversacion','Ana Vega'],
+  ['Consultorio Psicológico Raíz','salud_bienestar','Chihuahua','Sin presencia; boca a boca',71,'calificada','Psic. Hugo Marín'],
+  ['Restaurante Doña Meche','restaurantes','Parral','Sin agenda; reseñas 3.9 con quejas de servicio',82,'handoff','Mercedes A.'],
+  ['Clínica Estética Lumen','clinicas','Ciudad Juárez','Corre pocos anuncios; web sin agenda',85,'ganada','Dr. Emilio Rueda'],
+  ['Ferretería El Tornillo','retail','Chihuahua','Sin catálogo en línea; inventario invisible',58,'descartada','—'],
+];
+const L = LEADS.map((r,i)=>({id:i+1,empresa:r[0],vertical:r[1],ciudad:r[2],hallazgo:r[3],score:r[4],estado:r[5],contacto:r[6]}));
+
+const CITAS = [
+  {d:'24',m:'jul',empresa:'Clínica Dental Sonrisa',contacto:'Dra. Paola Ríos',hora:'11:00',medio:'Videollamada',closer:'Fernando',estado:'confirmada'},
+  {d:'24',m:'jul',empresa:'Hotel Casa Grande',contacto:'Gabriela Nieto',hora:'16:30',medio:'Videollamada',closer:'Fernando',estado:'agendada'},
+  {d:'25',m:'jul',empresa:'Restaurante Doña Meche',contacto:'Mercedes A.',hora:'10:00',medio:'Teléfono',closer:'Fernando',estado:'agendada'},
+  {d:'26',m:'jul',empresa:'Inmobiliaria Norte',contacto:'Arq. Diego Fierro',hora:'13:00',medio:'Videollamada',closer:'Fernando',estado:'agendada'},
+];
+
+let INBOX = [
+  {id:1,empresa:'Boutique Luna',contacto:'Ana Sofía León',canal:'email',estado:'borrador',modelo:'Sonnet',
+   asunto:'Boutique Luna: una idea rápida para vender fuera del DM',
+   cuerpo:'Hola Ana Sofía,\n\nSoy Sofía, asistente virtual de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Boutique Luna y noté algo concreto: venden por DM y todavía no tienen tienda en línea, así que se pierde a quien las busca fuera de horario.\n\nUna marca de moda con la que trabajamos creció +180% en ventas al sumar tienda en línea y campañas. Creo que un Sitio Pro con catálogo les ayudaría a captar esas ventas.\n\n¿Te late una auditoría express gratis? Te la mando en 24h, sin compromiso.\n\nSofía · asistente virtual de ADM\nAviso de privacidad: atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes.'},
+  {id:2,empresa:'PowerFit Gym',contacto:'Iván Prieto',canal:'whatsapp',estado:'borrador',modelo:'Sonnet',
+   asunto:null,
+   cuerpo:'Hola Iván, soy Sofía, asistente virtual de ADM. Vi que PowerFit no tiene una landing de inscripción y sus redes están un poco abandonadas. Te preparo *gratis* una auditoría express con 3 mejoras accionables para captar más altas este mes. ¿Te la comparto? Responde BAJA para no recibir más mensajes.'},
+  {id:3,empresa:'Despacho Contable RM',contacto:'C.P. Rocío Máynez',canal:'email',estado:'borrador',modelo:'Sonnet',
+   asunto:'Despacho Contable RM: cómo llegar a más clientes sin depender de referidos',
+   cuerpo:'Hola Rocío,\n\nSoy Sofía, asistente virtual de ADM. Noté que el despacho hoy crece solo por referidos y no tiene una presencia digital que transmita esa autoridad al que los busca en Google.\n\nEn ADM llevamos +120 proyectos entregados ayudando a despachos a captar consultas calificadas. Un Sitio Pro sería el primer paso.\n\n¿Agendamos un diagnóstico de 15 min? Te mando también una auditoría express gratis.\n\nSofía · asistente virtual de ADM\nAviso de privacidad: atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes.'},
+  {id:4,empresa:'Nutrióloga Ana Vega',contacto:'Ana Vega',canal:'whatsapp',estado:'aprobado',modelo:'Sonnet',
+   asunto:null,
+   cuerpo:'¡Qué bueno, Ana! Te comparto 2 horarios para el diagnóstico de 15 min: mañana 12:00 o pasado 17:00. Elige el que te acomode aquí: cal.com/adm/diagnostico 🙌'},
+];
+
+let EXEC = [
+  {job:'secuencias_outreach', desc:'Envía el siguiente toque de las cadencias activas', sec:14*60},
+  {job:'calificacion_horaria', desc:'Puntúa leads nuevos con Claude Haiku', sec:47*60},
+  {job:'llamadas_tibios', desc:'Encola llamadas de voz (SIP) a leads que abrieron', sec:112*60},
+  {job:'prospeccion_diaria', desc:'Busca negocios nuevos en Google Places', sec:9*3600+20*60},
+  {job:'reporte_diario', desc:'Envía el resumen del día a Fernando', sec:11*3600+40*60},
+];
+
+let DNC = ['no-molestar@ejemplo.com','+526141112233'];
+
+let CFG = {human_in_the_loop:true, auto_score:80, horario:'09:00–19:00', voz:true};
+
+/* ============ NAV ============ */
+const NAV = [
+  ['panel','Panel','▦',null],
+  ['leads','Prospectos','◎',()=>L.length],
+  ['verticales','Verticales','⬡',null],
+  ['secuencias','Secuencias','↳',null],
+  ['citas','Citas','◷',()=>CITAS.length],
+  ['conversaciones','Conversaciones','✎',()=>INBOX.filter(m=>m.estado==='borrador').length],
+  ['config','Configuración','⚙',null],
+];
+const SUB = {panel:'Resumen operativo del agente de ventas',leads:'Negocios prospectados y su score ICP',
+  verticales:'Dolor · ángulo · servicio · persona · prueba social',secuencias:'Cadencia multicanal de 3 toques',
+  citas:'Diagnósticos agendados para handoff',conversaciones:'Aprobación de mensajes salientes',config:'Operación y cumplimiento'};
+
+function buildNav(){
+  const nav=document.getElementById('nav');
+  nav.innerHTML='';
+  NAV.forEach(([id,label,ic,badge])=>{
+    const b=document.createElement('button');
+    b.dataset.id=id;
+    let bd = badge? `<span class="badge" id="bdg-${id}">${badge()}</span>`:'';
+    b.innerHTML=`<span class="ic">${ic}</span><span>${label}</span>${bd}`;
+    b.onclick=()=>go(id);
+    if(id==='panel')b.classList.add('active');
+    nav.appendChild(b);
+  });
+}
+function go(id){
+  document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.id===id));
+  document.querySelectorAll('.view').forEach(v=>v.classList.remove('show'));
+  document.getElementById('v-'+id).classList.add('show');
+  document.getElementById('viewTitle').textContent=NAV.find(n=>n[0]===id)[1];
+  document.getElementById('viewSub').textContent=SUB[id];
+  document.getElementById('side').classList.remove('open');
+  window.scrollTo(0,0);
+}
+
+/* ============ KPIs ============ */
+function computeKPIs(){
+  const ok=['contactada','respondio','en_conversacion','cita_agendada','handoff','ganada'];
+  const resp=['respondio','en_conversacion','cita_agendada','handoff','ganada'];
+  return {
+    descubiertas:L.length,
+    calificadas:L.filter(l=>l.estado==='calificada').length,
+    contactadas:L.filter(l=>ok.includes(l.estado)).length,
+    respondieron:L.filter(l=>resp.includes(l.estado)).length,
+    citas:CITAS.filter(c=>c.estado!=='cancelada').length,
+  };
+}
+function renderKPIs(){
+  const k=computeKPIs();
+  const defs=[
+    ['Descubiertas',k.descubiertas,'leads en la base'],
+    ['Calificadas',k.calificadas,'pasaron el ICP'],
+    ['Contactadas',k.contactadas,'recibieron outreach'],
+    ['Respondieron',k.respondieron,'tasa de respuesta '+Math.round(k.respondieron/Math.max(k.contactadas,1)*100)+'%'],
+    ['Citas',k.citas,'meta: 10/semana'],
+  ];
+  document.getElementById('kpis').innerHTML=defs.map(([l,v,f])=>
+    `<div class="kpi"><div class="lbl">${l}</div><div class="val">${v}</div><div class="foot">${f}</div><div class="bar" style="width:100%"></div></div>`).join('');
+}
+function renderVertBars(){
+  const counts={};
+  L.forEach(l=>counts[l.vertical]=(counts[l.vertical]||0)+1);
+  const rows=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  const max=Math.max(...rows.map(r=>r[1]));
+  document.getElementById('vertBars').innerHTML=rows.map(([cl,n])=>
+    `<div class="brow"><span>${VNAME[cl]||cl}</span><span class="track"><span class="fill" style="width:${n/max*100}%"></span></span><span class="n">${n}</span></div>`).join('');
+}
+function renderFunnel(){
+  const k=computeKPIs();
+  const stages=[['Descubiertas',k.descubiertas],['Calificadas',k.calificadas],['Contactadas',k.contactadas],['Respondieron',k.respondieron],['Citas',k.citas]];
+  const max=stages[0][1];
+  document.getElementById('funnel').innerHTML='<div class="blist">'+stages.map(([l,n],i)=>{
+    const colors=['#6C5CE7','#1F6FEB','#B8860B','#e17055','#1B7F5A'];
+    return `<div class="brow" style="grid-template-columns:120px 1fr 40px"><span>${l}</span><span class="track" style="height:20px"><span class="fill" style="width:${n/max*100}%;background:${colors[i]}"></span></span><span class="n">${n}</span></div>`;
+  }).join('')+'</div>';
+}
+
+/* ============ EJECUCIONES (cuenta regresiva en vivo) ============ */
+function fmt(s){const h=Math.floor(s/3600),m=Math.floor(s%3600/60),ss=Math.floor(s%60);
+  return (h>0?h+'h ':'')+String(m).padStart(2,'0')+'m '+String(ss).padStart(2,'0')+'s';}
+function renderExec(){
+  const list=[...EXEC].sort((a,b)=>a.sec-b.sec);
+  document.getElementById('execList').innerHTML=list.map(e=>
+    `<div class="exrow"><span class="dot"></span><div><div class="job">${e.job}</div><div class="desc">${e.desc}</div></div><span class="cd" data-job="${e.job}">${fmt(e.sec)}</span></div>`).join('');
+}
+setInterval(()=>{
+  EXEC.forEach(e=>{e.sec-=1; if(e.sec<=0){e.sec=e.job==='prospeccion_diaria'||e.job==='reporte_diario'?86400:(e.job==='calificacion_horaria'?3600:900);}});
+  document.querySelectorAll('.cd').forEach(el=>{const e=EXEC.find(x=>x.job===el.dataset.job); if(e)el.textContent=fmt(e.sec);});
+},1000);
+
+/* ============ LEADS ============ */
+function scoreClass(s){return s>=80?'sc-hi':s>=65?'sc-md':'sc-lo';}
+function norm(s){return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');}
+function renderLeads(){
+  const q=norm(document.getElementById('q').value);
+  const fv=document.getElementById('fVert').value, fe=document.getElementById('fEstado').value;
+  const rows=L.filter(l=>{
+    const hay=norm(l.empresa+l.ciudad+l.contacto+l.hallazgo).includes(q);
+    return hay && (!fv||l.vertical===fv) && (!fe||l.estado===fe);
+  });
+  document.getElementById('leadsBody').innerHTML = rows.length? rows.map(l=>
+    `<tr><td><div class="company">${l.empresa}</div><div class="sub2">${l.contacto}</div></td>
+     <td>${VNAME[l.vertical]||l.vertical}</td><td>${l.ciudad}</td>
+     <td class="sub2" style="max-width:280px">${l.hallazgo}</td>
+     <td class="score ${scoreClass(l.score)}">${l.score}</td>
+     <td><span class="pill p-${l.estado}">${l.estado.replace('_',' ')}</span></td></tr>`).join('')
+    : '<tr><td colspan="6" class="empty">Sin resultados con esos filtros</td></tr>';
+  document.getElementById('leadsCount').textContent=`${rows.length} de ${L.length} leads`;
+}
+function clearFilters(){document.getElementById('q').value='';document.getElementById('fVert').value='';document.getElementById('fEstado').value='';renderLeads();}
+function fillFilters(){
+  const fv=document.getElementById('fVert'); VERT.forEach(v=>fv.insertAdjacentHTML('beforeend',`<option value="${v.clave}">${v.nombre}</option>`));
+  const fe=document.getElementById('fEstado'); [...new Set(L.map(l=>l.estado))].forEach(e=>fe.insertAdjacentHTML('beforeend',`<option value="${e}">${e.replace('_',' ')}</option>`));
+}
+
+/* ============ VERTICALES ============ */
+function renderVert(){
+  document.getElementById('vgrid').innerHTML=VERT.map(v=>
+    `<div class="vcard"><div class="vtop"><h4>${v.nombre}</h4><span class="ticket">~$${v.ticket.toLocaleString('es-MX')}</span></div>
+     <div class="vfield"><div class="k">Dolor</div><div class="v">${v.dolor}</div></div>
+     <div class="vfield"><div class="k">Ángulo</div><div class="v">${v.angulo}</div></div>
+     <div class="vfield"><div class="k">Servicio ancla</div><div class="v">${v.servicio}</div></div>
+     <div class="vfield"><div class="k">Persona</div><div class="v">${v.persona}</div></div>
+     <div class="vfield"><div class="k">Prueba social</div><div class="v">${v.prueba}</div></div></div>`).join('');
+}
+
+/* ============ SECUENCIAS ============ */
+const SEQ=[
+  {n:1,canal:'email',wait:'inmediato',tmpl:'Asunto: {{empresa}}: una idea rápida para más clientes\n\nHola {{contacto_nombre}}, soy Sofía, asistente virtual de ADM. Revisé {{empresa}} y noté: {{hallazgo}}. {{prueba_social}} Creo que {{servicio_ancla}} te ayudaría.\n¿Te late una auditoría express gratis en 24h?\n{{opt_out}}'},
+  {n:2,canal:'whatsapp',wait:'+48 h',tmpl:'Hola {{contacto_nombre}}, soy Sofía de ADM. Te escribí sobre {{empresa}}: {{hallazgo}}. Te preparo *gratis* una auditoría express con 3 mejoras. ¿Te la comparto? {{opt_out}}'},
+  {n:3,canal:'voz',wait:'+72 h',tmpl:'Guion de llamada (SIP→PBX): preséntate como Sofía, asistente virtual de ADM. Menciona “{{hallazgo}}”. Ofrece auditoría gratis y agenda diagnóstico de 15 min con Fernando. Respeta el opt-out.'},
+];
+function renderSeq(){
+  const f=document.getElementById('seqflow'); let h='';
+  SEQ.forEach((s,i)=>{
+    h+=`<div class="step"><div class="ch"><span class="num">${s.n}</span><span class="canal">${s.canal}</span><span class="wait">${s.wait}</span></div><div class="tmpl">${s.tmpl}</div></div>`;
+    if(i<SEQ.length-1)h+='<div class="arrow">→</div>';
+  });
+  f.innerHTML=h;
+}
+
+/* ============ CITAS ============ */
+function renderCitas(){
+  document.getElementById('citasList').innerHTML=CITAS.map(c=>
+    `<div class="cita"><div class="date"><div class="d">${c.d}</div><div class="m">${c.m}</div></div>
+     <div class="info"><div class="company">${c.empresa}</div><div class="sub2">${c.contacto} · ${c.hora} · ${c.medio}</div></div>
+     <div style="text-align:right"><span class="pill p-${c.estado==='confirmada'?'ganada':'cita_agendada'}">${c.estado}</span><div class="sub2" style="margin-top:5px">→ ${c.closer}</div></div></div>`).join('');
+}
+
+/* ============ CONVERSACIONES / INBOX ============ */
+function renderInbox(){
+  const pend=INBOX.filter(m=>m.estado==='borrador');
+  const el=document.getElementById('inbox');
+  if(!INBOX.length){el.innerHTML='<div class="empty">Sin mensajes</div>';return;}
+  el.innerHTML=INBOX.map(m=>{
+    const isDraft=m.estado==='borrador';
+    return `<div class="msg" id="msg-${m.id}">
+      <div class="mh"><span class="who">${m.empresa}</span><span class="sub2">· ${m.contacto}</span>
+        <span class="badge-canal bc-${m.canal}">${m.canal}</span>
+        <span class="chip">Claude ${m.modelo}</span>
+        <span style="margin-left:auto" class="pill p-${isDraft?'contactada':'ganada'}">${isDraft?'borrador — pendiente':'aprobado ✓'}</span></div>
+      ${m.asunto?`<div class="sub2" style="margin-bottom:6px"><b>Asunto:</b> ${m.asunto}</div>`:''}
+      <div class="body" id="body-${m.id}">${m.cuerpo}</div>
+      <div class="acts">
+        ${isDraft?`<button class="btn sm primary" onclick="approve(${m.id})">✓ Aprobar y enviar</button>
+          <button class="btn sm" onclick="editMsg(${m.id})">✎ Editar</button>
+          <button class="btn sm" onclick="reject(${m.id})">✕ Rechazar</button>`
+          :`<span class="tag-ok">Listo para salir en la próxima ejecución</span>`}
+      </div></div>`;
+  }).join('');
+  updateBadges();
+}
+function approve(id){const m=INBOX.find(x=>x.id===id); m.estado='aprobado'; toast(`Mensaje a ${m.empresa} aprobado ✓`); renderInbox();}
+function reject(id){INBOX=INBOX.filter(x=>x.id!==id); toast('Mensaje rechazado'); renderInbox();}
+function editMsg(id){
+  const body=document.getElementById('body-'+id); const m=INBOX.find(x=>x.id===id);
+  body.innerHTML=`<textarea style="width:100%;min-height:150px" id="ta-${id}">${m.cuerpo}</textarea>
+    <div style="margin-top:8px"><button class="btn sm primary" onclick="saveMsg(${id})">Guardar</button></div>`;
+}
+function saveMsg(id){const m=INBOX.find(x=>x.id===id); m.cuerpo=document.getElementById('ta-'+id).value; toast('Cambios guardados'); renderInbox();}
+
+/* ============ CONFIG ============ */
+function renderCfg(){
+  const ops=document.getElementById('cfgOps');
+  ops.innerHTML=`
+    <div class="cfgrow"><div><div class="k">Human-in-the-loop</div><div class="d">Cada mensaje espera aprobación antes de enviarse.</div></div>
+      <label class="switch"><input type="checkbox" ${CFG.human_in_the_loop?'checked':''} onchange="CFG.human_in_the_loop=this.checked;toast('human_in_the_loop = '+this.checked)"><span class="slider"></span></label></div>
+    <div class="cfgrow"><div><div class="k">Auto-enviar si score ≥</div><div class="d">Solo aplica cuando human-in-the-loop está apagado.</div></div>
+      <input type="number" value="${CFG.auto_score}" min="0" max="100" style="width:80px" onchange="CFG.auto_score=+this.value"></div>
+    <div class="cfgrow"><div><div class="k">Horario de envío</div><div class="d">Ventana permitida (America/Chihuahua).</div></div>
+      <input value="${CFG.horario}" style="width:120px" onchange="CFG.horario=this.value"></div>
+    <div class="cfgrow"><div><div class="k">Cadencia máxima</div><div class="d">Toques con valor nuevo por lead.</div></div><b>3 toques</b></div>
+    <div class="cfgrow"><div><div class="k">Canal de voz (SIP → PBX propio)</div><div class="d">Sin Twilio. Deepgram + Claude + Cartesia es-MX.</div></div>
+      <label class="switch"><input type="checkbox" ${CFG.voz?'checked':''} onchange="CFG.voz=this.checked;toast('voz = '+this.checked)"><span class="slider"></span></label></div>`;
+  renderDnc();
+}
+function renderDnc(){
+  document.getElementById('dncList').innerHTML=DNC.map((d,i)=>
+    `<div class="dnc"><span>🚫 ${d}</span><button class="btn sm" onclick="delDnc(${i})">Quitar</button></div>`).join('')||'<div class="sub2">Lista vacía</div>';
+}
+function addDnc(){const v=document.getElementById('dncInput').value.trim(); if(!v)return; DNC.push(v); document.getElementById('dncInput').value=''; renderDnc(); toast('Agregado a do_not_contact');}
+function delDnc(i){DNC.splice(i,1); renderDnc();}
+
+/* ============ UTILS ============ */
+function updateBadges(){
+  NAV.forEach(([id,,,badge])=>{if(badge){const el=document.getElementById('bdg-'+id); if(el)el.textContent=badge();}});
+}
+function toast(msg){
+  let t=document.getElementById('toast');
+  if(!t){t=document.createElement('div');t.id='toast';
+    t.style.cssText='position:fixed;bottom:22px;left:50%;transform:translateX(-50%);background:var(--brand-2);color:#fff;padding:11px 18px;border-radius:10px;font-size:13px;font-weight:600;box-shadow:0 8px 24px rgba(0,0,0,.25);z-index:99;opacity:0;transition:.2s';
+    document.body.appendChild(t);}
+  t.textContent=msg; t.style.opacity='1'; clearTimeout(t._h); t._h=setTimeout(()=>t.style.opacity='0',2200);
+}
+function toggleTheme(){
+  const h=document.documentElement, dark=h.getAttribute('data-theme')==='dark';
+  h.setAttribute('data-theme',dark?'light':'dark');
+  document.getElementById('themeBtn').textContent=dark?'🌙 Oscuro':'☀️ Claro';
+}
+
+/* ============ INIT ============ */
+buildNav(); fillFilters();
+renderKPIs(); renderVertBars(); renderExec(); renderFunnel();
+renderLeads(); renderVert(); renderSeq(); renderCitas(); renderInbox(); renderCfg();
+</script>
+</body>
+</html>
