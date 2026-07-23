@@ -40,13 +40,13 @@ jobs:
           (cd agent && npm install --no-audit --no-fund)
           (cd services/outreach && npm install --no-audit --no-fund)
 
-      - name: Prospectar 24/7 (scraper una pasada por hora)
-        if: ${{ env.GOOGLE_PLACES_API_KEY != '' }}
+      - name: Prospectar 24/7 (OpenStreetMap gratis + Google si hay llave)
         run: |
-          if [ "$(date -u +%M)" -lt 15 ]; then
-            node services/scraper/src/index.js || true
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%M)" -lt 15 ]; then
+            node services/scraper/src/osm.js || true
+            if [ -n "$GOOGLE_PLACES_API_KEY" ]; then node services/scraper/src/index.js || true; fi
           else
-            echo "scraper: se salta este ciclo (ya corrio esta hora)"
+            echo "scraper: ya corrio esta hora"
           fi
 
       - name: Calificar + Ofertar (si hay llave de Anthropic)
