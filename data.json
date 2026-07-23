@@ -1,6 +1,6630 @@
 {
-  "last_run": "2026-07-23T21:57:10.544Z",
+  "last_run": "2026-07-23T23:49:22.968Z",
   "leads": [
+    [
+      "Casa de asistencia Esmeralda",
+      "hoteles",
+      "Parral",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pollo Feliz",
+      "restaurantes",
+      "Parral",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotel Adriana",
+      "hoteles",
+      "Parral",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Beyou",
+      "retail",
+      "Parral",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Arcos",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Mal del Javalí",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sierra",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sushi Sport Bar",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Rayon Burgers",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Plaza, Hotel.",
+      "hoteles",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Joyeria El Centenario",
+      "retail",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cuidado con el perro",
+      "retail",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Central café",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotel Princesa",
+      "hoteles",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cafe Mirador",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tacos Y Salsas",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Best Western Cumbres Inn",
+      "hoteles",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sushi San",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tarahumara Inn",
+      "hoteles",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Bar La Cueva",
+      "restaurantes",
+      "Cuauhtémoc",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "CYM Servicios Médicos",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Consultorios Medicos RM",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Clínica Plateros",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Unidad Médica del Centro",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Disfraces",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Kitchen House",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Delicias Country",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Tacos Rico's",
+      "restaurantes",
+      "Delicias",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "E M",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "1910 Barbería",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Psicología",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cónsul",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "M & H",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Matsuri",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Centro Express",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Arnulfo's Boots",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cuts",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Shanti Yoga",
+      "gimnasios",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "MQ Maquvi",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "D'mujer",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carnitas 'JB'",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gorditas Lily",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Combate",
+      "restaurantes",
+      "Delicias",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taquería Obregón",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Barreal",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ebi Sushi",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taco Baja",
+      "restaurantes",
+      "Delicias",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Maclovios",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Micaela's",
+      "restaurantes",
+      "Delicias",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Sopa",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Llantera Harley",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Balance",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "cie",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Coco Studio",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Barsini's",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Centro Radiología Dental",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Santa Fe",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Robledo",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tia Juana",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Aura Studio Pilates",
+      "gimnasios",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Odonto Implantes Delicias",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Birriería Tlaquepaque",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Shalalá",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burritos 'La Norteña'",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gray",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Femme",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "AD",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "AB Consultorios",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "LaB Wings",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Autoeléctrico Jimmy",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cesar",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mundo Teniss",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Radiadores González",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "MALA Studio",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "SK Kopay",
+      "salud_bienestar",
+      "Delicias",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Rico's Burros",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "ADN Mutante Gym",
+      "gimnasios",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "SIS Boutique",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Refaccionaria Mepart",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cuatro Aces",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taquería III",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "OM. Boutique",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dogos M10",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chicken Express",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Trío Wellness Bar",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Rock Gym",
+      "gimnasios",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Moritos",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carnitas Hermanos Sigala 2",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Norma Ponce",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "skincare",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Uña Salón y Más",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Loreca Jeans",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ortodontica",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tamales Any",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dental Center",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Lily",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Cuarta",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Llantera Chávez",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Fuerte",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dallas",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Aragón y Socios",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Elotería",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Javi",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "M & M",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Rancho Viejo",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Orta",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Llantas \"Araiza\"",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "EGO",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Le'Kiké",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sherwin-Williams",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Diaz Fermerling",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hair Salon",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Rancho",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Prestige",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Multi-Dent",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Aragón y Socios",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "BBQ",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "GUGSA",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Onda",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Perlita",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Café Mavegante",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Estética Capricho's",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fution Car Audio",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Mercalería",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "JL",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Alitas",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carnitas",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Llantas",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Modles Sanchez",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Borrego de Oro",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dentista U.N.A.M.",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carlos Vega Ortopedista",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carillo",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Eliana",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Catarina",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "AB",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Avante",
+      "automotriz",
+      "Delicias",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Manola",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Arbelle",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tito's Outlet",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Desponchado",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Italika - Hero",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Rodríguez",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Quaker State",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Sierra",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Super Taco",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cross Gym",
+      "gimnasios",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Haydée González",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "California",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Clínica Automotriz \"Prieto's\"",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "equilibra",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Eternamente Bella",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "DAS",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Abrazos",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Servicio Automotriz \"Mr. Solo\"",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Centro de Psicología Infantil",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carmen Herrera",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Beaudent",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Empire by Emily",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ropa",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Maria Tequila",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Qinta Avenida",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gala",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Lucky Ones 15/20",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dental San Pedro",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Snoopy",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mr. Waffle",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Varela & Asociados",
+      "despachos",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fu Lin Men",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mi Dentista",
+      "clinicas",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Kapela",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Servicios Prof. del Norte",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "DK Nail Bar",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Soto",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Desponchado JJ",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ribeye Club",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Servi Rent",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Xpress Clutch & Frenos",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tripitas La Estrella",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Nala",
+      "salud_bienestar",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tacos de Canasta",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mundo Gym",
+      "gimnasios",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carnitas Sigala",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Y & D",
+      "retail",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Reconstructora Victoria",
+      "automotriz",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Museo del Taco",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Rosticceri",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Algarabía Café",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wings Station",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mala Vida by:Diesel",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Trazza",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Sierra",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Zon@Ciber",
+      "restaurantes",
+      "Delicias",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Rong Hua",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Villareal",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "DXL Men's Apparel",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carter's",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Great Clips",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "D Vine Nail Spa",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hana Banana",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hammer & Nails Grooming Shop for Guys",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Torrid",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Loft",
+      "retail",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Apricot Lane Boutique",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Woodhouse Day Spa",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Raising Cane's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Jared",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fountain Nail Bar",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sport Clips",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Jersey Mike's Subs",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Crazy Crab",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chuy's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Jason's Deli",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Aspen Dental",
+      "clinicas",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "la Madeline",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Crave Kitchen & Bar",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Berry Lash",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Waxing the City",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Kung Fu Tea",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Red Panda",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tortas Parra",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gorditas Doña Tota",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hard Beat",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Samy & Ray Hair Studio",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Barbershop By Samy & Ray",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fajas, Fajas Y Fajas",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Zapatería Mercado",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hero Athletic",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Martha’s Café",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "B-17 Bombers Oyster Pub",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ragnarök - Mixed Martial Arts",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Smart Fit",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Smart Fit",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "ConVisión",
+      "clinicas",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chang Long",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chic Nail Salón & Spa",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Moda Masculina",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hong Kong City",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Rachel's Boutique",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Llangtera y Desponchadora Barraza",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Vagoncito",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dentalia",
+      "clinicas",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burritos \"El Compa\"",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burritos \"Tin Tan\"",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burritos \"El Centenario\"",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taconeta",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Andale Mexican Restaurant and Cantina",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "360 Fit Center",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cratos Cross Training",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Platino Gym",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tam Furniture Discount",
+      "retail",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dent Punisher n Sound Lab",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Pajarillo",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mariscos Tejis",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wendy´s",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Terraza",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Trevly",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Mercadito",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Luperca",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gula",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Muzza",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ardeo",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Vanny Café de Europa",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "YugMix",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Yamva",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Pollo Feliz",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tortas Nico",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Almacen",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mar del Pacífico",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Artística",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cabanna",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cantina Reyes",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Garufa",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "PanPan",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Las garnachas",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burritos Tío Chepe",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tacos Ajiji",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Barbacoa Cuatro Vientos",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hamburger House",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Patriot Body Shop",
+      "automotriz",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Don Chuy's",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carlos Villarreal",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Lerdo",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Toscana",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sushigada",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Elotelandia",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Starbucks",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Elotelandia",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Toro Bronco",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Cedros Hotel Inn",
+      "hoteles",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Kabrishka",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Lonches Zaragoza",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sushi Place",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "C&A",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Casa Martino",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Estética Laura Unisex",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ruth's Chris Steak House",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Via Venetto",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Via Venetto",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dairy Queen",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "SABRO KARNE",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Atorón",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Charro Panzón",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chicken Ready",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "COBRE 29",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "TAQUERIA Aaajii!!",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chick's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carl's Jr.",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Choby's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Choby's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "TAZAS",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wild Rooster Wing Bar",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Niza spa & hair salon",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "MALA FACHA",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pollo Asado",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pique",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Falconi Donas",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sushigada",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Falconi Donas",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Luxor",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taqueria \"Los Cuñados\"",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Black Moon",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burger King",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carl's Jr.",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taquería Aaajiji",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chilaquiles Brody´s",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Takoketo Tecnologico",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Starbucks",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "tienda de boneless",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chuck E. Cheese",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "en la esquinaaa",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "GRIAL Grupo Integral de Asesoria y Litigio",
+      "despachos",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La esquina snacks y mas",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "la esquina snacks y mas...",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Doggo’s Taco’s",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Empanadas La Argentina",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Panda Express",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Luby's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Five Guys",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Starbucks",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "OshKosh B'gosh",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Firehouse Subs",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Nordstrom Rack",
+      "retail",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Rack Room Shoes",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ulta Beauty",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Dapper Doughnut",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tropical Smoothie Cafe",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "P.F. Chang's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Kona Grill",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Melting Pot",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Versona",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carlos & Mickey's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Grimaldis",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Muñeco",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Arbólito",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "samurai kitchen",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Poke³",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Eugenio",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Skeleto Rock & Skate",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taquería Rivas",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tarí",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Lovely",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Panda Express",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Jess",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "McDonald's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burritos El Rey",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Trinches",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mr. Doggo",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gala",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gorditas Doña Tota",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taco Inn",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Pilita",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Comida China",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Botas",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Applebee's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wendy's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sixty",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Sierra",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Villareal",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Boca Rosa",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ashley",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Zoe's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Stimygym",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Feria",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Black Bar",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Monat",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Barber's",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Aeropuerto",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Delirium Salon",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Uniformes Alamo",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Muebles Leo",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Kiboexpress",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Calle",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Smart Fit",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pockets",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Greyhound Restaurant and Snacks",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hellens",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Spartans Gym",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Victor Casa",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Casa de Andy Lao",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotel Impala",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Pueblito de Don Cuco",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Panam",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Divas",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Artículos de PIel Chava",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wendy's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Milano",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sergio´s Boots",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Botas Santa Fé",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Papa John's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Zoe Fashion",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Takero mucho",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Party Pizza",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Moda Vaquera Teja's",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mr. Pollo",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Maxi",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Centro Joyero",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Estilista Asia",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Foro Café",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Border Brewing CO.",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Black Coffe Gallery",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hungry Brothers",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Caliburger",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Girasoles",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los pollos",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fiesta y tacos",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Women's gym",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pockets",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Peter Piper Pizza",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "FAMSA",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Alcatraz gym",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "San Martín",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taquería Ajijí",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Gym Co.",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Blitz",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chicken Joint",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gorditas El Atorón",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Coppel",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "MaConnys Pizza",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "J&B Mueblería",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Bodeguita",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Continental",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Juárez",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wendy's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Long John Silver's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dunkin'",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Cometa",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Arrancadero",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Casa de Jesus Martha",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Desponchado",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Desponchado",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taller Electrico Autoelectrica",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Peter Piper Pizza Las Misiones",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Applebee's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Uptown Cheapskate",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mirai Bowl",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Supercuts",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Arturos",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Peking Kitchen",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Juaritoz Café",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ragnarök",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotel Flamingo",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burritos Tony",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Desponchadora",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "CUSTODIA DE SAN PABLO RESTAURANT MUSEO TEATRO",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carnitas Mezquital",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Israel Parra Attorney At Law",
+      "despachos",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "James Avery Jewelry",
+      "retail",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Einstein Bros. Bagels",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The District",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Casa de Empeno",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Roberto's Steak House",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Tenampa",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Güinumoss",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Lone Star Inn",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Quality Inn Airport",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Twin Peaks",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Cabaña",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Nacional Monte de Piedad",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The Venetian Furniture Co.",
+      "retail",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Puente",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "D'Rosel",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Dandy",
+      "salud_bienestar",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Servicompactos",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Quality Coin and Jewelry",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Choza",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Auto climas",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Motel Regis",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cirujano Dentista",
+      "clinicas",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Las Palmas",
+      "clinicas",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Doña Ana",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Venadito te ll",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El corralito",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Barrigas",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Antonio's Deli",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Las Chorreadas",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The professional tire shop",
+      "automotriz",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Toro Quintaco",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tacofish",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carl´s Junior",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Consulado Inn",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wendy's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Conquistador",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Javics",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Valentina Cafe",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Abuelo",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Don Epi",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chipotle",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taco Bell",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Club de Caza y Tiro Cruz Blanca",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mariscos Villa del Mar",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Intense Spinning",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tamales el Sinaloense",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Beer Box",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Power Shots Cyclery",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sushigada",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "MAKISU",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Vanilla Heaven",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Starbucks",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "NYC Deli",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Papa John's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Villita",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wingstop",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Peking Express",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pizza Joint",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chipotle",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Total Fitness",
+      "gimnasios",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Village Inn",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "The King's X",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Lucy's Restaurant",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wendy's",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Starbucks",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Wienerschnitzel",
+      "restaurantes",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Texas Tech Medical Center El Paso",
+      "clinicas",
+      "Ciudad Juárez",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Holiday Inn Express",
+      "hoteles",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fat Boys",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fonda Mistica",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Enderezado y Pintura Gijjalva",
+      "automotriz",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Chihuas",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gabba Gabba",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cervecería 19",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ika Climbing Gym",
+      "gimnasios",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Bella Napole",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Patio C",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pink Shop Ropa Americana",
+      "retail",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "tortas ray",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "casa",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "memos pizza",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "CAFFENIO Ciudad JUDICIAL",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Desayunos y Comidas Ely",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Defensoria Legal",
+      "despachos",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "pockets",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "ROLI COMERCIAL",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "torys burgers",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "elotes dany",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cafenio",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Corner Sport",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "ewi turi",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La mordida sabrosa",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "memontados",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "burger king",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "casino winland",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "BENTO SUSHI",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "pawer gym cordilleras",
+      "gimnasios",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "mastergym",
+      "gimnasios",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Bugo",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "cafeteca cornito",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Las Apestosas",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Snack's House",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tacos y Montados La Junta",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hakuna",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "KFC Homero",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los alcatraces",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Bosch Car Service",
+      "automotriz",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Barbacoa \"El Cowboy\"",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Barbacoa Danny's",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ilabaru",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Barrio Centro",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tacos Orientales de Cuervanaca",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Señor Camarón",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tacos Sonora",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sr Smash",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Jack In The Box",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Borbolla",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Bar FL",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "NUDE Nailbar",
+      "salud_bienestar",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "BRACESLAB",
+      "clinicas",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Magic Nimbus",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sigi's Burger",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Lasañisima",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Casa Azul",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Antigua Paz",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Boston's Pizza",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Central Hotel Boutique",
+      "hoteles",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "casa nativa",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dalia",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Yorch Burguers",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Haciendita Centro",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Doroteo Hotel Boutique",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dr. Fernando Morales",
+      "clinicas",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dentalia",
+      "clinicas",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Vintage Café y Crepas",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sierra Alta Medical City",
+      "clinicas",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mariscos Culichys",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Yoyo Coffee and Kids",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "KFC",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Mezquites",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Basanti Tea Bar CUU",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Puesto de tacos Kon Aarón",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Entre Amigos Gastrobar",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pancake Paradise Saucito",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mercado popular",
+      "retail",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Dental top braces",
+      "clinicas",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Clinica de Jesus",
+      "clinicas",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Geronimo",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Shugu",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Elotes Alex",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotel Centric Chihuahua",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Huauzontle",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pizza Salvatore",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Auto Pinturas Flores",
+      "automotriz",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "HM Mirador",
+      "hoteles",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mariscos Perla Negra",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Rincón del Abuelo",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Finca Mar y Tierra",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Finca Mar y Tierra",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Clínica y maternidad La Luz",
+      "clinicas",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Bernardi",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "KFC",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tortas Servandini",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tortas el Ratón",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cubylam & Chalet",
+      "retail",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mesón de Catedral",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "San Luis",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cervecería Local",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tortas Piolines",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Farolito Aventurero",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pancake Paradise",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Casa Cervecera Bolívar",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Allende 104",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Cerve",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Taller del Chef",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotdogs Santa Clara",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Gimnasio Adaptado",
+      "gimnasios",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotdogs Santa Clara",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Burritos Reyna",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Casona",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "DQ Grill & Chill",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mandala",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Motel Lito",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Sierra",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Elotes Alex",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Trevli",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "KFC",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Las Brasas",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Rodeo",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Mariscos La Costa",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Opera Boutique",
+      "retail",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Quiznos",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Central Pan y Café",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tex Lex",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Starbucks",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Bento sushi",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Il Fornaio",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Café Kaldi",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Crepas & Espartanos",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Departamentos",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Vips",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El comidero",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "la cafe",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Villa mar 2",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La caracola",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Alonso",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Casa david",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Aguafuerte Cantina Brava",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Aguafuerte Cantina Brava",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "super tortas",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotel Casa Colonial",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Cafe Cortez",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Antigua Paz",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotel Jardín del Centro",
+      "hoteles",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Momposino Cafe",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fredy's Tortas y Tacos",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Hotel El Chepe",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Philly Oak",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Subway",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Domino's",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Monalisa",
+      "salud_bienestar",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pollo Feliz",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Buffalucas",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Little Caesars",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Stay Fit",
+      "gimnasios",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Fonda Chilanga",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Bella Napole Sucursal Tecnologico",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Pollo Feliz",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Mansión",
+      "restaurantes",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Tacos Orientales",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Quality Inn",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "El Quintal",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ibis",
+      "hoteles",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Golden Wah",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Sushiko",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Reforma",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Maria Dolores",
+      "hoteles",
+      "Chihuahua",
+      "Tiene web; oportunidad de mejorar captación/anuncios",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Vips",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Carl's Jr.",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Ricky's Tacos",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      0,
+      "descubierta",
+      "—"
+    ],
     [
       "MY DENT Centro Odontológico",
       "clinicas",
@@ -65,15 +6689,6 @@
       "Dr. César Carreño"
     ],
     [
-      "Dra. Mitsi Delgado Osorio",
-      "clinicas",
-      "Chihuahua",
-      "General/estética; sin agenda 24/7 (confirmar)",
-      80,
-      "calificada",
-      "Dra. Mitsi Delgado"
-    ],
-    [
       "Tacos Roma",
       "restaurantes",
       "Chihuahua",
@@ -81,6 +6696,15 @@
       80,
       "calificada",
       "—"
+    ],
+    [
+      "Dra. Mitsi Delgado Osorio",
+      "clinicas",
+      "Chihuahua",
+      "General/estética; sin agenda 24/7 (confirmar)",
+      80,
+      "calificada",
+      "Dra. Mitsi Delgado"
     ],
     [
       "Punta Rochi",
@@ -101,19 +6725,19 @@
       "Dr. Néstor Olivas"
     ],
     [
-      "Stay Fit Fitness Center",
-      "gimnasios",
+      "Little Tony's Pizza (Riberas)",
+      "restaurantes",
       "Chihuahua",
-      "Sin landing de inscripción visible (confirmar)",
+      "Pizza; pedidos por teléfono/DM (confirmar)",
       78,
       "calificada",
       "—"
     ],
     [
-      "Little Tony's Pizza (Riberas)",
-      "restaurantes",
+      "Stay Fit Fitness Center",
+      "gimnasios",
       "Chihuahua",
-      "Pizza; pedidos por teléfono/DM (confirmar)",
+      "Sin landing de inscripción visible (confirmar)",
       78,
       "calificada",
       "—"
