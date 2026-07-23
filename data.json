@@ -1,68 +1,14 @@
 {
-  "last_run": "2026-07-23T20:26:00Z",
+  "last_run": "2026-07-23T21:41:50.562Z",
   "leads": [
     [
-      "Montados La Esquina",
-      "restaurantes",
+      "MY DENT Centro Odontológico",
+      "clinicas",
       "Chihuahua",
-      "Reservas/pedidos por DM o teléfono; sin agenda en línea (confirmar)",
-      82,
-      "descubierta",
-      "—"
-    ],
-    [
-      "Punta Rochi",
-      "restaurantes",
-      "Chihuahua",
-      "Mexicana; sin pedidos/reservas en línea visibles (confirmar)",
-      79,
-      "descubierta",
-      "—"
-    ],
-    [
-      "Amorevino",
-      "restaurantes",
-      "Chihuahua",
-      "Italiana; captación solo por redes (confirmar)",
-      77,
+      "Clínica multi-especialidad; oportunidad de captación (confirmar)",
+      86,
       "calificada",
-      "—"
-    ],
-    [
-      "Tacos Roma",
-      "restaurantes",
-      "Chihuahua",
-      "Fusión; sin menú/agenda en la web (confirmar)",
-      80,
-      "calificada",
-      "—"
-    ],
-    [
-      "Little Tony's Pizza (Riberas)",
-      "restaurantes",
-      "Chihuahua",
-      "Pizza; pedidos por teléfono/DM (confirmar)",
-      78,
-      "descubierta",
-      "—"
-    ],
-    [
-      "Los Camarones Hermanos",
-      "restaurantes",
-      "Chihuahua",
-      "Mariscos; sin reservas en línea (confirmar)",
-      76,
-      "descubierta",
-      "—"
-    ],
-    [
-      "La Pérgola",
-      "restaurantes",
-      "Chihuahua",
-      "Mexicana; presencia web débil (confirmar)",
-      75,
-      "calificada",
-      "—"
+      "Recepción MY DENT"
     ],
     [
       "Dr. Darío Ortega Aceves",
@@ -83,15 +29,6 @@
       "Dra. Rosa M. Méndez"
     ],
     [
-      "Dr. José Alan Villalobos Mendoza",
-      "clinicas",
-      "Chihuahua",
-      "Implantología; sin sitio con agenda 24/7 (confirmar)",
-      82,
-      "descubierta",
-      "Dr. J. A. Villalobos"
-    ],
-    [
       "Dra. Priscilla Ruvalcaba Cabrera",
       "clinicas",
       "Chihuahua",
@@ -101,12 +38,30 @@
       "Dra. Priscilla Ruvalcaba"
     ],
     [
+      "Montados La Esquina",
+      "restaurantes",
+      "Chihuahua",
+      "Reservas/pedidos por DM o teléfono; sin agenda en línea (confirmar)",
+      82,
+      "calificada",
+      "—"
+    ],
+    [
+      "Dr. José Alan Villalobos Mendoza",
+      "clinicas",
+      "Chihuahua",
+      "Implantología; sin sitio con agenda 24/7 (confirmar)",
+      82,
+      "calificada",
+      "Dr. J. A. Villalobos"
+    ],
+    [
       "Dr. César Jair Carreño Hernández",
       "clinicas",
       "Chihuahua",
       "Odontología digital; poca presencia propia (confirmar)",
       81,
-      "descubierta",
+      "calificada",
       "Dr. César Carreño"
     ],
     [
@@ -115,8 +70,26 @@
       "Chihuahua",
       "General/estética; sin agenda 24/7 (confirmar)",
       80,
-      "descubierta",
+      "calificada",
       "Dra. Mitsi Delgado"
+    ],
+    [
+      "Tacos Roma",
+      "restaurantes",
+      "Chihuahua",
+      "Fusión; sin menú/agenda en la web (confirmar)",
+      80,
+      "calificada",
+      "—"
+    ],
+    [
+      "Punta Rochi",
+      "restaurantes",
+      "Chihuahua",
+      "Mexicana; sin pedidos/reservas en línea visibles (confirmar)",
+      79,
+      "calificada",
+      "—"
     ],
     [
       "Dr. Néstor Olivas García",
@@ -124,17 +97,8 @@
       "Chihuahua",
       "Prostodoncia; capta por teléfono (confirmar)",
       79,
-      "descubierta",
-      "Dr. Néstor Olivas"
-    ],
-    [
-      "MY DENT Centro Odontológico",
-      "clinicas",
-      "Chihuahua",
-      "Clínica multi-especialidad; oportunidad de captación (confirmar)",
-      86,
       "calificada",
-      "Recepción MY DENT"
+      "Dr. Néstor Olivas"
     ],
     [
       "Stay Fit Fitness Center",
@@ -142,7 +106,34 @@
       "Chihuahua",
       "Sin landing de inscripción visible (confirmar)",
       78,
-      "descubierta",
+      "calificada",
+      "—"
+    ],
+    [
+      "Little Tony's Pizza (Riberas)",
+      "restaurantes",
+      "Chihuahua",
+      "Pizza; pedidos por teléfono/DM (confirmar)",
+      78,
+      "calificada",
+      "—"
+    ],
+    [
+      "Amorevino",
+      "restaurantes",
+      "Chihuahua",
+      "Italiana; captación solo por redes (confirmar)",
+      77,
+      "calificada",
+      "—"
+    ],
+    [
+      "Los Camarones Hermanos",
+      "restaurantes",
+      "Chihuahua",
+      "Mariscos; sin reservas en línea (confirmar)",
+      76,
+      "calificada",
       "—"
     ],
     [
@@ -155,45 +146,224 @@
       "—"
     ],
     [
+      "La Pérgola",
+      "restaurantes",
+      "Chihuahua",
+      "Mexicana; presencia web débil (confirmar)",
+      75,
+      "calificada",
+      "—"
+    ],
+    [
       "Bita Fitness",
       "gimnasios",
       "Chihuahua",
       "Tiene sitio; oportunidad de campañas/ads (confirmar)",
       74,
-      "descubierta",
+      "calificada",
       "—"
     ]
   ],
   "inbox": [
     {
-      "id": "1",
-      "empresa": "Amorevino",
-      "contacto": "Recepción",
-      "canal": "email",
-      "estado": "borrador",
-      "modelo": "plantilla",
-      "asunto": "Amorevino: una idea para llenar más mesas",
-      "cuerpo": "Hola, equipo de Amorevino:\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Los encontré entre los restaurantes recomendados de la ciudad y vi que la captación es principalmente por redes, sin una agenda/menú en línea, así que se pierde a quien ya los busca en Google.\n\nEn ADM ayudamos a un restaurante a subir +3.2× sus reservaciones con agenda online + WhatsApp y campañas locales. Creo que un Sitio Pro con agenda les vendría muy bien.\n\n¿Les mando una auditoría express gratis con 3 mejoras concretas? Sin compromiso.\n\nSofía · asesora digital de ADM · atlasdigitalmark.com\nResponde BAJA para no recibir más mensajes."
-    },
-    {
-      "id": "2",
-      "empresa": "Dr. Darío Ortega Aceves",
-      "contacto": "Dr. Darío Ortega",
+      "id": "b6ae6425-38f4-4519-b502-6098b231ad39",
+      "empresa": "Bita Fitness",
+      "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola, Dr. Ortega 👋 Soy Sofía, asesora digital de ADM en Chihuahua. Lo vi en Doctoralia; muchos consultorios agendan solo por teléfono o directorio y pierden pacientes que buscan en Google. Le preparo *gratis* una auditoría express con 3 mejoras (nosotros ayudamos a una clínica a llegar a 1ª página de Google en 90 días). ¿Se la comparto? Responda BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Bita Fitness: Tiene sitio; oportunidad de campañas/ads (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "3",
-      "empresa": "MY DENT Centro Odontológico",
-      "contacto": "Recepción MY DENT",
+      "id": "a60a1a28-287c-4cfb-bfcf-70dba3a7dc74",
+      "empresa": "Bita Fitness",
+      "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "MY DENT: llenar la agenda con pacientes que ya te buscan",
-      "cuerpo": "Hola, equipo de MY DENT:\n\nSoy Sofía, asesora digital de ADM. Los encontré en Doctoralia y noté que hay una buena oportunidad de captar pacientes con una web propia con agenda 24/7 y reseñas, en vez de depender del directorio.\n\nEn ADM ayudamos a una clínica a llegar a 1ª página de Google en 90 días y llenar su agenda de valoraciones. ¿Les mando una auditoría express gratis con 3 mejoras? Sin compromiso.\n\nSofía · asesora digital de ADM · atlasdigitalmark.com\nResponde BAJA para no recibir más mensajes."
+      "asunto": "Bita Fitness: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Bita Fitness y noté algo concreto: Tiene sitio; oportunidad de campañas/ads (confirmar).\n\nADM mantiene 91% de renovación de clientes por resultados sostenidos. Por eso creo que Sitio Plus/Pro + Arranque te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "420ba8ba-76b3-422f-a2bd-3665a1820f26",
+      "empresa": "La Pérgola",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre La Pérgola: Mexicana; presencia web débil (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "837ababd-92b8-4836-b697-229cc88f849c",
+      "empresa": "La Pérgola",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "La Pérgola: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a La Pérgola y noté algo concreto: Mexicana; presencia web débil (confirmar).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "c7e6b02a-c6ed-4772-a1ee-df5697bc2d42",
+      "empresa": "Climb 3045",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Climb 3045: Escalada/fitness; captación por redes (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "6106a018-5d1c-44e0-8b37-1dc564665011",
+      "empresa": "Climb 3045",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Climb 3045: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Climb 3045 y noté algo concreto: Escalada/fitness; captación por redes (confirmar).\n\nADM mantiene 91% de renovación de clientes por resultados sostenidos. Por eso creo que Sitio Plus/Pro + Arranque te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "e3e7d07b-8907-40b7-8c10-6abb508f2514",
+      "empresa": "Los Camarones Hermanos",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Los Camarones Hermanos: Mariscos; sin reservas en línea (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "2e1687ce-369e-43fa-9671-58aeac007425",
+      "empresa": "Los Camarones Hermanos",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Los Camarones Hermanos: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Los Camarones Hermanos y noté algo concreto: Mariscos; sin reservas en línea (confirmar).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "6395341e-35f0-4c1f-840f-c268eb50f066",
+      "empresa": "Amorevino",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Amorevino: Italiana; captación solo por redes (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "cd01ebb5-f13c-43cb-8012-a68cec38a6b9",
+      "empresa": "Amorevino",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Amorevino: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Amorevino y noté algo concreto: Italiana; captación solo por redes (confirmar).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "6fb5b7e1-0329-49a7-8d16-eaa323186e0b",
+      "empresa": "Little Tony's Pizza (Riberas)",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Little Tony's Pizza (Riberas): Pizza; pedidos por teléfono/DM (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "600bac32-603d-48b1-b541-fbf7d0b498dd",
+      "empresa": "Little Tony's Pizza (Riberas)",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Little Tony's Pizza (Riberas): una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Little Tony's Pizza (Riberas) y noté algo concreto: Pizza; pedidos por teléfono/DM (confirmar).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "86525b0f-f7f7-4eac-a280-ab9e3da8eeff",
+      "empresa": "Stay Fit Fitness Center",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Stay Fit Fitness Center: Sin landing de inscripción visible (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "5fb62ef5-25b8-43a8-9ffe-2623e5be2fda",
+      "empresa": "Stay Fit Fitness Center",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Stay Fit Fitness Center: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Stay Fit Fitness Center y noté algo concreto: Sin landing de inscripción visible (confirmar).\n\nADM mantiene 91% de renovación de clientes por resultados sostenidos. Por eso creo que Sitio Plus/Pro + Arranque te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "b7d7a253-986b-42ad-8b72-89ea7bef337a",
+      "empresa": "Dr. Néstor Olivas García",
+      "contacto": "Dr. Néstor Olivas",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola, Dr. soy Sofía, asesora digital de ADM. Te escribí por correo sobre Dr. Néstor Olivas García: Prostodoncia; capta por teléfono (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "6d8b9cce-03db-485c-bc7d-880b138e9ce1",
+      "empresa": "Dr. Néstor Olivas García",
+      "contacto": "Dr. Néstor Olivas",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Dr. Néstor Olivas García: una idea rápida para más clientes",
+      "cuerpo": "Hola, Dr.\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Dr. Néstor Olivas García y noté algo concreto: Prostodoncia; capta por teléfono (confirmar).\n\nUna clínica de salud llegó a 1ª página de Google en 90 días y llenó su agenda de valoraciones. Por eso creo que Sitio Pro con agenda te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "434962ce-0984-4d1e-a744-d2286d6d2011",
+      "empresa": "Punta Rochi",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Punta Rochi: Mexicana; sin pedidos/reservas en línea visibles (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "1dc79452-9e2d-48c0-85b6-25ba0f6fcd64",
+      "empresa": "Punta Rochi",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Punta Rochi: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Punta Rochi y noté algo concreto: Mexicana; sin pedidos/reservas en línea visibles (confirmar).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "eaf3bf0a-7f20-4f70-a17f-84149108db26",
+      "empresa": "Tacos Roma",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Tacos Roma: Fusión; sin menú/agenda en la web (confirmar). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "475fc493-0304-412b-810a-0567388ff158",
+      "empresa": "Tacos Roma",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Tacos Roma: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Tacos Roma y noté algo concreto: Fusión; sin menú/agenda en la web (confirmar).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     }
   ],
   "citas": []
