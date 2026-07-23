@@ -325,7 +325,7 @@
             <h3>Cumplimiento MX</h3><div class="hint">Salvaguardas que van en el código, no son opcionales.</div>
             <div class="cfgrow"><div><div class="k">Opt-out en cada mensaje</div><div class="d">“Responde BAJA para no recibir más mensajes.”</div></div><span class="tag-ok">Activo ✓</span></div>
             <div class="cfgrow"><div><div class="k">Aviso de privacidad</div><div class="d">Se referencia en el primer contacto.</div></div><a href="#" onclick="return false">/privacidad</a></div>
-            <div class="cfgrow"><div><div class="k">Identificación como asistente virtual</div><div class="d">El agente “Sofía” nunca finge ser humano.</div></div><span class="tag-ok">Activo ✓</span></div>
+            <div class="cfgrow"><div><div class="k">Identificación como asesora digital</div><div class="d">El agente “Sofía” nunca finge ser humano.</div></div><span class="tag-ok">Activo ✓</span></div>
             <div style="margin-top:14px">
               <div class="k" style="font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700;margin-bottom:8px">Lista do_not_contact (supresión)</div>
               <div id="dncList"></div>
@@ -400,13 +400,13 @@ const CITAS = [
 let INBOX = [
   {id:1,empresa:'Boutique Luna',contacto:'Ana Sofía León',canal:'email',estado:'borrador',modelo:'Sonnet',
    asunto:'Boutique Luna: una idea rápida para vender fuera del DM',
-   cuerpo:'Hola Ana Sofía,\n\nSoy Sofía, asistente virtual de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Boutique Luna y noté algo concreto: venden por DM y todavía no tienen tienda en línea, así que se pierde a quien las busca fuera de horario.\n\nUna marca de moda con la que trabajamos creció +180% en ventas al sumar tienda en línea y campañas. Creo que un Sitio Pro con catálogo les ayudaría a captar esas ventas.\n\n¿Te late una auditoría express gratis? Te la mando en 24h, sin compromiso.\n\nSofía · asistente virtual de ADM\nAviso de privacidad: atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes.'},
+   cuerpo:'Hola Ana Sofía,\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Boutique Luna y noté algo concreto: venden por DM y todavía no tienen tienda en línea, así que se pierde a quien las busca fuera de horario.\n\nUna marca de moda con la que trabajamos creció +180% en ventas al sumar tienda en línea y campañas. Creo que un Sitio Pro con catálogo les ayudaría a captar esas ventas.\n\n¿Te late una auditoría express gratis? Te la mando en 24h, sin compromiso.\n\nSofía · asesora digital de ADM\nAviso de privacidad: atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes.'},
   {id:2,empresa:'PowerFit Gym',contacto:'Iván Prieto',canal:'whatsapp',estado:'borrador',modelo:'Sonnet',
    asunto:null,
-   cuerpo:'Hola Iván, soy Sofía, asistente virtual de ADM. Vi que PowerFit no tiene una landing de inscripción y sus redes están un poco abandonadas. Te preparo *gratis* una auditoría express con 3 mejoras accionables para captar más altas este mes. ¿Te la comparto? Responde BAJA para no recibir más mensajes.'},
+   cuerpo:'Hola Iván, soy Sofía, asesora digital de ADM. Vi que PowerFit no tiene una landing de inscripción y sus redes están un poco abandonadas. Te preparo *gratis* una auditoría express con 3 mejoras accionables para captar más altas este mes. ¿Te la comparto? Responde BAJA para no recibir más mensajes.'},
   {id:3,empresa:'Despacho Contable RM',contacto:'C.P. Rocío Máynez',canal:'email',estado:'borrador',modelo:'Sonnet',
    asunto:'Despacho Contable RM: cómo llegar a más clientes sin depender de referidos',
-   cuerpo:'Hola Rocío,\n\nSoy Sofía, asistente virtual de ADM. Noté que el despacho hoy crece solo por referidos y no tiene una presencia digital que transmita esa autoridad al que los busca en Google.\n\nEn ADM llevamos +120 proyectos entregados ayudando a despachos a captar consultas calificadas. Un Sitio Pro sería el primer paso.\n\n¿Agendamos un diagnóstico de 15 min? Te mando también una auditoría express gratis.\n\nSofía · asistente virtual de ADM\nAviso de privacidad: atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes.'},
+   cuerpo:'Hola Rocío,\n\nSoy Sofía, asesora digital de ADM. Noté que el despacho hoy crece solo por referidos y no tiene una presencia digital que transmita esa autoridad al que los busca en Google.\n\nEn ADM llevamos +120 proyectos entregados ayudando a despachos a captar consultas calificadas. Un Sitio Pro sería el primer paso.\n\n¿Agendamos un diagnóstico de 15 min? Te mando también una auditoría express gratis.\n\nSofía · asesora digital de ADM\nAviso de privacidad: atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes.'},
   {id:4,empresa:'Nutrióloga Ana Vega',contacto:'Ana Vega',canal:'whatsapp',estado:'aprobado',modelo:'Sonnet',
    asunto:null,
    cuerpo:'¡Qué bueno, Ana! Te comparto 2 horarios para el diagnóstico de 15 min: mañana 12:00 o pasado 17:00. Elige el que te acomode aquí: cal.com/adm/diagnostico 🙌'},
@@ -555,9 +555,9 @@ function renderVert(){
 
 /* ============ SECUENCIAS ============ */
 const SEQ=[
-  {n:1,canal:'email',wait:'inmediato',tmpl:'Asunto: {{empresa}}: una idea rápida para más clientes\n\nHola {{contacto_nombre}}, soy Sofía, asistente virtual de ADM. Revisé {{empresa}} y noté: {{hallazgo}}. {{prueba_social}} Creo que {{servicio_ancla}} te ayudaría.\n¿Te late una auditoría express gratis en 24h?\n{{opt_out}}'},
+  {n:1,canal:'email',wait:'inmediato',tmpl:'Asunto: {{empresa}}: una idea rápida para más clientes\n\nHola {{contacto_nombre}}, soy Sofía, asesora digital de ADM. Revisé {{empresa}} y noté: {{hallazgo}}. {{prueba_social}} Creo que {{servicio_ancla}} te ayudaría.\n¿Te late una auditoría express gratis en 24h?\n{{opt_out}}'},
   {n:2,canal:'whatsapp',wait:'+48 h',tmpl:'Hola {{contacto_nombre}}, soy Sofía de ADM. Te escribí sobre {{empresa}}: {{hallazgo}}. Te preparo *gratis* una auditoría express con 3 mejoras. ¿Te la comparto? {{opt_out}}'},
-  {n:3,canal:'voz',wait:'+72 h',tmpl:'Guion de llamada (SIP→PBX): preséntate como Sofía, asistente virtual de ADM. Menciona “{{hallazgo}}”. Ofrece auditoría gratis y agenda diagnóstico de 15 min con Fernando. Respeta el opt-out.'},
+  {n:3,canal:'voz',wait:'+72 h',tmpl:'Guion de llamada (SIP→PBX): preséntate como Sofía, asesora digital de ADM. Menciona “{{hallazgo}}”. Ofrece auditoría gratis y agenda diagnóstico de 15 min con Fernando. Respeta el opt-out.'},
 ];
 function renderSeq(){
   const f=document.getElementById('seqflow'); let h='';
@@ -693,9 +693,9 @@ function channelMsgs(l,o){
   const nombre=(l.contacto&&l.contacto!=='—')?l.contacto.split('·')[0].trim().split(' ')[0]:'';
   const coma=nombre?(' '+nombre):'';
   return [
-    {c:'email',t:`Asunto: ${l.empresa}: una idea para ${o.necesidad.toLowerCase()}\n\nHola${coma}, soy Sofía, asistente virtual de ADM. Revisé ${l.empresa} y noté: ${l.hallazgo}. ${o.prueba} Creo que ${o.necesidad} (${o.paquete}) te ayudaría a captar más clientes.\n¿Te late una auditoría express gratis? Te la mando en 24h.\nResponde BAJA para no recibir más mensajes.`},
+    {c:'email',t:`Asunto: ${l.empresa}: una idea para ${o.necesidad.toLowerCase()}\n\nHola${coma}, soy Sofía, asesora digital de ADM. Revisé ${l.empresa} y noté: ${l.hallazgo}. ${o.prueba} Creo que ${o.necesidad} (${o.paquete}) te ayudaría a captar más clientes.\n¿Te late una auditoría express gratis? Te la mando en 24h.\nResponde BAJA para no recibir más mensajes.`},
     {c:'whatsapp',t:`Hola${coma}, soy Sofía de ADM 👋 Vi que en ${l.empresa}: ${l.hallazgo}. Te preparo *gratis* una propuesta de ${o.necesidad}. ¿Te la comparto? Responde BAJA para salir.`},
-    {c:'voz',t:`Guion de llamada (SIP→PBX): Sofía, asistente virtual de ADM, menciona "${l.hallazgo}", presenta ${o.necesidad} (${o.paquete} · ${o.rango}) y agenda diagnóstico de 15 min con Fernando.`},
+    {c:'voz',t:`Guion de llamada (SIP→PBX): Sofía, asesora digital de ADM, menciona "${l.hallazgo}", presenta ${o.necesidad} (${o.paquete} · ${o.rango}) y agenda diagnóstico de 15 min con Fernando.`},
   ];
 }
 function openLead(id){
