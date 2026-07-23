@@ -362,54 +362,44 @@ const VERT = [
 ];
 const VNAME = Object.fromEntries(VERT.map(v=>[v.clave,v.nombre]));
 
+// ► PROSPECTOS REALES de Chihuahua (directorios públicos: Platos.mx/RestaurantGuru, Doctoralia, Wellhub).
+//   Descubiertos y clasificados por ICP. "(confirmar)" = valida la señal en 20 seg antes de contactar.
 const LEADS = [
-  ['Tacos El Güero','restaurantes','Chihuahua','No tiene sitio web y solo 8 reseñas en Google',88,'calificada','Luis Herrera · Dueño'],
-  ['Mariscos La Perla','restaurantes','Chihuahua','Web sin versión móvil; menú desactualizado',81,'contactada','Rosa M. · Gerente'],
-  ['Clínica Dental Sonrisa','clinicas','Delicias','Agenda solo por teléfono; sin reseñas recientes',90,'cita_agendada','Dra. Paola Ríos'],
-  ['Estética Bella Vida','clinicas','Chihuahua','Instagram activo pero sin web ni agenda online',84,'respondio','Karla Domínguez'],
-  ['Spa Serena','salud_bienestar','Chihuahua','Sin web; agenda por WhatsApp saturado',76,'contactada','Mónica Salas'],
-  ['Inmobiliaria Norte','inmobiliarias','Ciudad Juárez','Propiedades solo en Facebook, sin catálogo',86,'en_conversacion','Arq. Diego Fierro'],
-  ['Bienes Raíces del Valle','inmobiliarias','Delicias','No corre anuncios; leads sin seguimiento',72,'calificada','Sergio Ontiveros'],
-  ['Boutique Luna','retail','Chihuahua','Vende por DM; sin tienda en línea',79,'contactada','Ana Sofía León'],
-  ['Zapatería El Paso','retail','Cuauhtémoc','Web vieja (2016), no responsiva',68,'descubierta','—'],
-  ['PowerFit Gym','gimnasios','Chihuahua','Sin landing de inscripción; redes abandonadas',83,'respondio','Iván Prieto'],
-  ['Studio Yoga Om','gimnasios','Chihuahua','Sin web; depende del paso peatonal',65,'descubierta','—'],
-  ['Despacho Contable RM','despachos','Chihuahua','Sin presencia digital; solo referidos',77,'contactada','C.P. Rocío Máynez'],
-  ['Bufete Legal Fierro','despachos','Parral','Web básica sin captación de consultas',70,'calificada','Lic. Andrés Fierro'],
-  ['Hotel Casa Grande','hoteles','Chihuahua','100% dependiente de OTAs; sin reservas directas',87,'cita_agendada','Gabriela Nieto'],
-  ['Motel Camino Real','hoteles','Camargo','Sin web; solo teléfono',60,'descartada','—'],
-  ['Taller Mecánico Díaz','automotriz','Chihuahua','No aparece en Google Maps optimizado',74,'contactada','Jorge Díaz'],
-  ['Llantera Express','automotriz','Delicias','Sin web ni agenda de servicios',66,'descubierta','—'],
-  ['Academia Inglés Vivo','educacion','Chihuahua','Inscripciones sin embudo; compite con apps',78,'respondio','Miss Laura Cano'],
-  ['Autoescuela Segura','educacion','Cuauhtémoc','Web lenta; sin formulario de registro',63,'descubierta','—'],
-  ['Nutrióloga Ana Vega','salud_bienestar','Chihuahua','Agenda por DM; sin web de confianza',80,'en_conversacion','Ana Vega'],
-  ['Consultorio Psicológico Raíz','salud_bienestar','Chihuahua','Sin presencia; boca a boca',71,'calificada','Psic. Hugo Marín'],
-  ['Restaurante Doña Meche','restaurantes','Parral','Sin agenda; reseñas 3.9 con quejas de servicio',82,'handoff','Mercedes A.'],
-  ['Clínica Estética Lumen','clinicas','Ciudad Juárez','Corre pocos anuncios; web sin agenda',85,'ganada','Dr. Emilio Rueda'],
-  ['Ferretería El Tornillo','retail','Chihuahua','Sin catálogo en línea; inventario invisible',58,'descartada','—'],
+  ['Montados La Esquina','restaurantes','Chihuahua','Reservas/pedidos por DM o teléfono; sin agenda en línea (confirmar)',82,'descubierta','—'],
+  ['Punta Rochi','restaurantes','Chihuahua','Mexicana; sin pedidos/reservas en línea visibles (confirmar)',79,'descubierta','—'],
+  ['Amorevino','restaurantes','Chihuahua','Italiana; captación solo por redes (confirmar)',77,'calificada','—'],
+  ['Tacos Roma','restaurantes','Chihuahua','Fusión; sin menú/agenda en la web (confirmar)',80,'calificada','—'],
+  ["Little Tony's Pizza (Riberas)",'restaurantes','Chihuahua','Pizza; pedidos por teléfono/DM (confirmar)',78,'descubierta','—'],
+  ['Los Camarones Hermanos','restaurantes','Chihuahua','Mariscos; sin reservas en línea (confirmar)',76,'descubierta','—'],
+  ['La Pérgola','restaurantes','Chihuahua','Mexicana; presencia web débil (confirmar)',75,'calificada','—'],
+  ['Dr. Darío Ortega Aceves','clinicas','Chihuahua','Agenda vía Doctoralia/teléfono; sin sitio propio con agenda (confirmar)',85,'calificada','Dr. Darío Ortega'],
+  ['Dra. Rosa María Méndez Rey','clinicas','Chihuahua','Ortodoncia; capta por directorio, sin web propia (confirmar)',84,'calificada','Dra. Rosa M. Méndez'],
+  ['Dr. José Alan Villalobos Mendoza','clinicas','Chihuahua','Implantología; sin sitio con agenda 24/7 (confirmar)',82,'descubierta','Dr. J. A. Villalobos'],
+  ['Dra. Priscilla Ruvalcaba Cabrera','clinicas','Chihuahua','Estética dental; depende de directorio (confirmar)',83,'calificada','Dra. Priscilla Ruvalcaba'],
+  ['Dr. César Jair Carreño Hernández','clinicas','Chihuahua','Odontología digital; poca presencia propia (confirmar)',81,'descubierta','Dr. César Carreño'],
+  ['Dra. Mitsi Delgado Osorio','clinicas','Chihuahua','General/estética; sin agenda 24/7 (confirmar)',80,'descubierta','Dra. Mitsi Delgado'],
+  ['Dr. Néstor Olivas García','clinicas','Chihuahua','Prostodoncia; capta por teléfono (confirmar)',79,'descubierta','Dr. Néstor Olivas'],
+  ['MY DENT Centro Odontológico','clinicas','Chihuahua','Clínica multi-especialidad; oportunidad de captación (confirmar)',86,'calificada','Recepción MY DENT'],
+  ['Stay Fit Fitness Center','gimnasios','Chihuahua','Sin landing de inscripción visible (confirmar)',78,'descubierta','—'],
+  ['Climb 3045','gimnasios','Chihuahua','Escalada/fitness; captación por redes (confirmar)',76,'calificada','—'],
+  ['Bita Fitness','gimnasios','Chihuahua','Tiene sitio; oportunidad de campañas/ads (confirmar)',74,'descubierta','—'],
 ];
 const L = LEADS.map((r,i)=>({id:i+1,empresa:r[0],vertical:r[1],ciudad:r[2],hallazgo:r[3],score:r[4],estado:r[5],contacto:r[6]}));
 
-const CITAS = [
-  {d:'24',m:'jul',empresa:'Clínica Dental Sonrisa',contacto:'Dra. Paola Ríos',hora:'11:00',medio:'Videollamada',closer:'Fernando',estado:'confirmada'},
-  {d:'24',m:'jul',empresa:'Hotel Casa Grande',contacto:'Gabriela Nieto',hora:'16:30',medio:'Videollamada',closer:'Fernando',estado:'agendada'},
-  {d:'25',m:'jul',empresa:'Restaurante Doña Meche',contacto:'Mercedes A.',hora:'10:00',medio:'Teléfono',closer:'Fernando',estado:'agendada'},
-  {d:'26',m:'jul',empresa:'Inmobiliaria Norte',contacto:'Arq. Diego Fierro',hora:'13:00',medio:'Videollamada',closer:'Fernando',estado:'agendada'},
-];
+// Aún sin citas: nadie ha sido contactado todavía (estado honesto del arranque).
+const CITAS = [];
 
+// Borradores listos para tu aprobación (human-in-the-loop) de prospectos REALES calificados.
 let INBOX = [
-  {id:1,empresa:'Boutique Luna',contacto:'Ana Sofía León',canal:'email',estado:'borrador',modelo:'Sonnet',
-   asunto:'Boutique Luna: una idea rápida para vender fuera del DM',
-   cuerpo:'Hola Ana Sofía,\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Boutique Luna y noté algo concreto: venden por DM y todavía no tienen tienda en línea, así que se pierde a quien las busca fuera de horario.\n\nUna marca de moda con la que trabajamos creció +180% en ventas al sumar tienda en línea y campañas. Creo que un Sitio Pro con catálogo les ayudaría a captar esas ventas.\n\n¿Te late una auditoría express gratis? Te la mando en 24h, sin compromiso.\n\nSofía · asesora digital de ADM\nAviso de privacidad: atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes.'},
-  {id:2,empresa:'PowerFit Gym',contacto:'Iván Prieto',canal:'whatsapp',estado:'borrador',modelo:'Sonnet',
+  {id:1,empresa:'Amorevino',contacto:'Recepción',canal:'email',estado:'borrador',modelo:'plantilla',
+   asunto:'Amorevino: una idea para llenar más mesas',
+   cuerpo:'Hola, equipo de Amorevino:\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Los encontré entre los restaurantes recomendados de la ciudad y vi que la captación es principalmente por redes, sin una agenda/menú en línea, así que se pierde a quien ya los busca en Google.\n\nEn ADM ayudamos a un restaurante a subir +3.2× sus reservaciones con agenda online + WhatsApp y campañas locales. Creo que un Sitio Pro con agenda les vendría muy bien.\n\n¿Les mando una auditoría express gratis con 3 mejoras concretas? Sin compromiso.\n\nSofía · asesora digital de ADM · atlasdigitalmark.com\nResponde BAJA para no recibir más mensajes.'},
+  {id:2,empresa:'Dr. Darío Ortega Aceves',contacto:'Dr. Darío Ortega',canal:'whatsapp',estado:'borrador',modelo:'plantilla',
    asunto:null,
-   cuerpo:'Hola Iván, soy Sofía, asesora digital de ADM. Vi que PowerFit no tiene una landing de inscripción y sus redes están un poco abandonadas. Te preparo *gratis* una auditoría express con 3 mejoras accionables para captar más altas este mes. ¿Te la comparto? Responde BAJA para no recibir más mensajes.'},
-  {id:3,empresa:'Despacho Contable RM',contacto:'C.P. Rocío Máynez',canal:'email',estado:'borrador',modelo:'Sonnet',
-   asunto:'Despacho Contable RM: cómo llegar a más clientes sin depender de referidos',
-   cuerpo:'Hola Rocío,\n\nSoy Sofía, asesora digital de ADM. Noté que el despacho hoy crece solo por referidos y no tiene una presencia digital que transmita esa autoridad al que los busca en Google.\n\nEn ADM llevamos +120 proyectos entregados ayudando a despachos a captar consultas calificadas. Un Sitio Pro sería el primer paso.\n\n¿Agendamos un diagnóstico de 15 min? Te mando también una auditoría express gratis.\n\nSofía · asesora digital de ADM\nAviso de privacidad: atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes.'},
-  {id:4,empresa:'Nutrióloga Ana Vega',contacto:'Ana Vega',canal:'whatsapp',estado:'aprobado',modelo:'Sonnet',
-   asunto:null,
-   cuerpo:'¡Qué bueno, Ana! Te comparto 2 horarios para el diagnóstico de 15 min: mañana 12:00 o pasado 17:00. Elige el que te acomode aquí: cal.com/adm/diagnostico 🙌'},
+   cuerpo:'Hola, Dr. Ortega 👋 Soy Sofía, asesora digital de ADM en Chihuahua. Lo vi en Doctoralia; muchos consultorios agendan solo por teléfono o directorio y pierden pacientes que buscan en Google. Le preparo *gratis* una auditoría express con 3 mejoras (nosotros ayudamos a una clínica a llegar a 1ª página de Google en 90 días). ¿Se la comparto? Responda BAJA para no recibir más mensajes.'},
+  {id:3,empresa:'MY DENT Centro Odontológico',contacto:'Recepción MY DENT',canal:'email',estado:'borrador',modelo:'plantilla',
+   asunto:'MY DENT: llenar la agenda con pacientes que ya te buscan',
+   cuerpo:'Hola, equipo de MY DENT:\n\nSoy Sofía, asesora digital de ADM. Los encontré en Doctoralia y noté que hay una buena oportunidad de captar pacientes con una web propia con agenda 24/7 y reseñas, en vez de depender del directorio.\n\nEn ADM ayudamos a una clínica a llegar a 1ª página de Google en 90 días y llenar su agenda de valoraciones. ¿Les mando una auditoría express gratis con 3 mejoras? Sin compromiso.\n\nSofía · asesora digital de ADM · atlasdigitalmark.com\nResponde BAJA para no recibir más mensajes.'},
 ];
 
 let EXEC = [
@@ -570,6 +560,7 @@ function renderSeq(){
 
 /* ============ CITAS ============ */
 function renderCitas(){
+  if(!CITAS.length){document.getElementById('citasList').innerHTML='<div class="empty">Aún no hay citas. Aparecerán aquí cuando un prospecto agende su diagnóstico (Cal.com) → handoff a Fernando.</div>';return;}
   document.getElementById('citasList').innerHTML=CITAS.map(c=>
     `<div class="cita"><div class="date"><div class="d">${c.d}</div><div class="m">${c.m}</div></div>
      <div class="info"><div class="company">${c.empresa}</div><div class="sub2">${c.contacto} · ${c.hora} · ${c.medio}</div></div>
