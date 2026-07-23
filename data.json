@@ -1,0 +1,200 @@
+{
+  "last_run": "2026-07-23T20:26:00Z",
+  "leads": [
+    [
+      "Montados La Esquina",
+      "restaurantes",
+      "Chihuahua",
+      "Reservas/pedidos por DM o teléfono; sin agenda en línea (confirmar)",
+      82,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Punta Rochi",
+      "restaurantes",
+      "Chihuahua",
+      "Mexicana; sin pedidos/reservas en línea visibles (confirmar)",
+      79,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Amorevino",
+      "restaurantes",
+      "Chihuahua",
+      "Italiana; captación solo por redes (confirmar)",
+      77,
+      "calificada",
+      "—"
+    ],
+    [
+      "Tacos Roma",
+      "restaurantes",
+      "Chihuahua",
+      "Fusión; sin menú/agenda en la web (confirmar)",
+      80,
+      "calificada",
+      "—"
+    ],
+    [
+      "Little Tony's Pizza (Riberas)",
+      "restaurantes",
+      "Chihuahua",
+      "Pizza; pedidos por teléfono/DM (confirmar)",
+      78,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Los Camarones Hermanos",
+      "restaurantes",
+      "Chihuahua",
+      "Mariscos; sin reservas en línea (confirmar)",
+      76,
+      "descubierta",
+      "—"
+    ],
+    [
+      "La Pérgola",
+      "restaurantes",
+      "Chihuahua",
+      "Mexicana; presencia web débil (confirmar)",
+      75,
+      "calificada",
+      "—"
+    ],
+    [
+      "Dr. Darío Ortega Aceves",
+      "clinicas",
+      "Chihuahua",
+      "Agenda vía Doctoralia/teléfono; sin sitio propio con agenda (confirmar)",
+      85,
+      "calificada",
+      "Dr. Darío Ortega"
+    ],
+    [
+      "Dra. Rosa María Méndez Rey",
+      "clinicas",
+      "Chihuahua",
+      "Ortodoncia; capta por directorio, sin web propia (confirmar)",
+      84,
+      "calificada",
+      "Dra. Rosa M. Méndez"
+    ],
+    [
+      "Dr. José Alan Villalobos Mendoza",
+      "clinicas",
+      "Chihuahua",
+      "Implantología; sin sitio con agenda 24/7 (confirmar)",
+      82,
+      "descubierta",
+      "Dr. J. A. Villalobos"
+    ],
+    [
+      "Dra. Priscilla Ruvalcaba Cabrera",
+      "clinicas",
+      "Chihuahua",
+      "Estética dental; depende de directorio (confirmar)",
+      83,
+      "calificada",
+      "Dra. Priscilla Ruvalcaba"
+    ],
+    [
+      "Dr. César Jair Carreño Hernández",
+      "clinicas",
+      "Chihuahua",
+      "Odontología digital; poca presencia propia (confirmar)",
+      81,
+      "descubierta",
+      "Dr. César Carreño"
+    ],
+    [
+      "Dra. Mitsi Delgado Osorio",
+      "clinicas",
+      "Chihuahua",
+      "General/estética; sin agenda 24/7 (confirmar)",
+      80,
+      "descubierta",
+      "Dra. Mitsi Delgado"
+    ],
+    [
+      "Dr. Néstor Olivas García",
+      "clinicas",
+      "Chihuahua",
+      "Prostodoncia; capta por teléfono (confirmar)",
+      79,
+      "descubierta",
+      "Dr. Néstor Olivas"
+    ],
+    [
+      "MY DENT Centro Odontológico",
+      "clinicas",
+      "Chihuahua",
+      "Clínica multi-especialidad; oportunidad de captación (confirmar)",
+      86,
+      "calificada",
+      "Recepción MY DENT"
+    ],
+    [
+      "Stay Fit Fitness Center",
+      "gimnasios",
+      "Chihuahua",
+      "Sin landing de inscripción visible (confirmar)",
+      78,
+      "descubierta",
+      "—"
+    ],
+    [
+      "Climb 3045",
+      "gimnasios",
+      "Chihuahua",
+      "Escalada/fitness; captación por redes (confirmar)",
+      76,
+      "calificada",
+      "—"
+    ],
+    [
+      "Bita Fitness",
+      "gimnasios",
+      "Chihuahua",
+      "Tiene sitio; oportunidad de campañas/ads (confirmar)",
+      74,
+      "descubierta",
+      "—"
+    ]
+  ],
+  "inbox": [
+    {
+      "id": "1",
+      "empresa": "Amorevino",
+      "contacto": "Recepción",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Amorevino: una idea para llenar más mesas",
+      "cuerpo": "Hola, equipo de Amorevino:\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Los encontré entre los restaurantes recomendados de la ciudad y vi que la captación es principalmente por redes, sin una agenda/menú en línea, así que se pierde a quien ya los busca en Google.\n\nEn ADM ayudamos a un restaurante a subir +3.2× sus reservaciones con agenda online + WhatsApp y campañas locales. Creo que un Sitio Pro con agenda les vendría muy bien.\n\n¿Les mando una auditoría express gratis con 3 mejoras concretas? Sin compromiso.\n\nSofía · asesora digital de ADM · atlasdigitalmark.com\nResponde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "2",
+      "empresa": "Dr. Darío Ortega Aceves",
+      "contacto": "Dr. Darío Ortega",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola, Dr. Ortega 👋 Soy Sofía, asesora digital de ADM en Chihuahua. Lo vi en Doctoralia; muchos consultorios agendan solo por teléfono o directorio y pierden pacientes que buscan en Google. Le preparo *gratis* una auditoría express con 3 mejoras (nosotros ayudamos a una clínica a llegar a 1ª página de Google en 90 días). ¿Se la comparto? Responda BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "3",
+      "empresa": "MY DENT Centro Odontológico",
+      "contacto": "Recepción MY DENT",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "MY DENT: llenar la agenda con pacientes que ya te buscan",
+      "cuerpo": "Hola, equipo de MY DENT:\n\nSoy Sofía, asesora digital de ADM. Los encontré en Doctoralia y noté que hay una buena oportunidad de captar pacientes con una web propia con agenda 24/7 y reseñas, en vez de depender del directorio.\n\nEn ADM ayudamos a una clínica a llegar a 1ª página de Google en 90 días y llenar su agenda de valoraciones. ¿Les mando una auditoría express gratis con 3 mejoras? Sin compromiso.\n\nSofía · asesora digital de ADM · atlasdigitalmark.com\nResponde BAJA para no recibir más mensajes."
+    }
+  ],
+  "citas": []
+}

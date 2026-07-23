@@ -1,0 +1,79 @@
+name: Motor de Ventas ADM (gratis)
+
+# Corre el ciclo del motor en los servidores de GitHub (gratis para repos).
+# - Cada 15 min (cron) y también a mano (workflow_dispatch).
+# - Necesita una base Postgres persistente (Supabase free) y tus llaves,
+#   guardadas como *Secrets* del repo (Settings → Secrets and variables → Actions).
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"   # cada 15 minutos (UTC)
+  workflow_dispatch:          # botón "Run workflow" para dispararlo manual
+
+concurrency:
+  group: motor-ventas
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # para publicar data.json de vuelta al repo (panel en vivo)
+
+jobs:
+  ciclo:
+    runs-on: ubuntu-latest
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      PGSSL: "true"
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
+      WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
+      CAL_LINK: ${{ secrets.CAL_LINK }}
+      USAR_IA: ${{ vars.USAR_IA }}   # ponlo en "true" si quieres redacción con Claude
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+
+      - name: Instalar dependencias
+        run: |
+          (cd services/scraper && npm install --no-audit --no-fund)
+          (cd agent && npm install --no-audit --no-fund)
+          (cd services/outreach && npm install --no-audit --no-fund)
+
+      - name: Prospectar (si hay llave de Google)
+        if: ${{ env.GOOGLE_PLACES_API_KEY != '' }}
+        run: node services/scraper/src/index.js || true
+
+      - name: Calificar + Ofertar (si hay llave de Anthropic)
+        if: ${{ env.ANTHROPIC_API_KEY != '' }}
+        run: |
+          node agent/src/qualify.js || true
+          node agent/src/offer.js   || true
+
+      - name: Redactar outreach (plantillas gratis / IA opcional)
+        run: node agent/src/personalize.js || true
+
+      - name: Enviar correo (Resend)
+        if: ${{ env.RESEND_API_KEY != '' }}
+        run: node services/outreach/src/email.js --sin-horario || true
+
+      - name: Enviar WhatsApp
+        if: ${{ env.WHATSAPP_TOKEN != '' }}
+        run: node services/outreach/src/whatsapp.js --sin-horario || true
+
+      - name: Responder a quienes contestaron
+        if: ${{ env.ANTHROPIC_API_KEY != '' }}
+        run: node agent/src/reply.js || true
+
+      - name: Exportar estado al panel (data.json)
+        run: node agent/src/export_dashboard.js --out=./data.json || true
+
+      - name: Publicar panel en vivo
+        run: |
+          git config user.name "adm-motor"
+          git config user.email "motor@atlasdigitalmark.com"
+          git add data.json
+          git commit -m "motor: actualizar panel en vivo [skip ci]" || echo "sin cambios"
+          git push || true

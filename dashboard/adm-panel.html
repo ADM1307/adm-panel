@@ -224,7 +224,7 @@
     <nav class="nav" id="nav"></nav>
     <div class="side-foot">
       <div><span class="pulse"></span>Agente activo · 24/7</div>
-      <div style="margin-top:6px">Chihuahua, MX · v0.1</div>
+      <div id="lastRun" style="margin-top:6px">Chihuahua, MX · v0.1</div>
     </div>
   </aside>
 
@@ -711,10 +711,40 @@ function openLead(id){
 function closeModal(){document.getElementById('modal').classList.remove('show');}
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
 
+/* ============ CARGA EN VIVO (data.json que el motor actualiza solo) ============ */
+// Si existe ./data.json (lo escribe el motor en cada corrida de GitHub Actions),
+// el panel muestra el estado REAL y en vivo. Si no, usa los datos embebidos.
+async function cargarDatos(){
+  try{
+    const r = await fetch('./data.json?t=' + Date.now(), {cache:'no-store'});
+    if(!r.ok) return;
+    const d = await r.json();
+    if(Array.isArray(d.leads) && d.leads.length){
+      L.length = 0;
+      d.leads.forEach((row,i)=>L.push({id:i+1,empresa:row[0],vertical:row[1],ciudad:row[2],hallazgo:row[3],score:row[4],estado:row[5],contacto:row[6]||'—'}));
+    }
+    if(Array.isArray(d.inbox)) INBOX = d.inbox;
+    if(Array.isArray(d.citas)) { CITAS.length=0; d.citas.forEach(c=>CITAS.push(c)); }
+    if(d.last_run){
+      const f = new Date(d.last_run);
+      const el = document.getElementById('lastRun');
+      if(el) el.innerHTML = '🟢 Última ejecución del motor:<br>' + f.toLocaleString('es-MX',{timeZone:'America/Chihuahua'});
+    }
+  }catch(e){ /* sin data.json: usa datos embebidos */ }
+}
+
 /* ============ INIT ============ */
-buildNav(); fillFilters();
-renderKPIs(); renderVertBars(); renderExec(); renderFunnel();
-renderPipeline(); renderLeads(); renderVert(); renderSeq(); renderCitas(); renderInbox(); renderCfg();
+(async () => {
+  await cargarDatos();
+  buildNav(); fillFilters();
+  renderKPIs(); renderVertBars(); renderExec(); renderFunnel();
+  renderPipeline(); renderLeads(); renderVert(); renderSeq(); renderCitas(); renderInbox(); renderCfg();
+  // Auto-refresca cada 60s para ver el motor trabajar sin recargar la página.
+  setInterval(async () => {
+    await cargarDatos();
+    renderKPIs(); renderVertBars(); renderFunnel(); renderPipeline(); renderLeads(); renderCitas(); renderInbox(); updateBadges();
+  }, 60000);
+})();
 </script>
 </body>
 </html>
