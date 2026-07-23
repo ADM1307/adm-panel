@@ -179,6 +179,38 @@
     .kpis{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.cfg{grid-template-columns:1fr}
     .menu-toggle{display:inline-flex!important}}
   .menu-toggle{display:none}
+
+  /* ---------- Pipeline (kanban) ---------- */
+  .pipebar{margin-bottom:16px}
+  .kanban{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px;align-items:flex-start}
+  .kcol{flex:0 0 258px;background:var(--surface-2);border:1px solid var(--line);border-radius:14px;padding:12px;display:flex;flex-direction:column;gap:10px;min-height:120px}
+  .kcol .kh{display:flex;align-items:center;justify-content:space-between;font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);padding:2px 2px 9px;border-bottom:2px solid var(--line)}
+  .kcol .kh .cnt{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:1px 9px;color:var(--text);font-size:11px}
+  .kcard{background:var(--surface);border:1px solid var(--line);border-radius:11px;padding:12px;box-shadow:var(--shadow);cursor:pointer;transition:.15s}
+  .kcard:hover{border-color:var(--brand);transform:translateY(-1px)}
+  .kcard .kname{font-weight:700;font-size:13.5px;line-height:1.25}
+  .kcard .kcity{color:var(--muted);font-size:12px;margin-top:2px}
+  .kcard .krow{display:flex;align-items:center;gap:7px;margin-top:9px;flex-wrap:wrap}
+  .icp{font-weight:800;font-size:11px;padding:3px 8px;border-radius:7px}
+  .icp-hi{background:#dff3e7;color:#12805a} .icp-md{background:#fff3d6;color:#9a6d00} .icp-lo{background:#eceff2;color:#5c6b7a}
+  html[data-theme="dark"] .icp{filter:brightness(.85) saturate(1.2)}
+  .ktag{background:var(--surface-2);border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:11px;color:var(--muted)}
+  .koffer{margin-top:9px;font-size:11.5px;background:var(--surface-2);border:1px dashed var(--line);border-radius:8px;padding:7px 8px;line-height:1.4}
+  .koffer b{color:var(--brand)}
+  .kchan{display:flex;gap:5px;margin-top:9px}
+  .kchan span{font-size:10px;font-weight:700;padding:2px 7px;border-radius:5px;opacity:.32;background:var(--surface-2);border:1px solid var(--line);color:var(--muted);text-transform:capitalize}
+  .kchan span.on{opacity:1}
+  .kchan span.on.email{background:#e2ecff;color:#2a53b8;border-color:transparent}
+  .kchan span.on.whatsapp{background:#dcf7e3;color:#12805a;border-color:transparent}
+  .kchan span.on.voz{background:#efe6ff;color:#6c5cd0;border-color:transparent}
+
+  /* ---------- Modal ---------- */
+  .modal{position:fixed;inset:0;background:rgba(8,18,29,.55);display:none;align-items:flex-start;justify-content:center;z-index:50;padding:38px 16px;overflow:auto}
+  .modal.show{display:flex}
+  .modal .box{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px;max-width:640px;width:100%;box-shadow:0 22px 64px rgba(0,0,0,.4)}
+  .modal .x{float:right;cursor:pointer;color:var(--muted);font-size:20px;line-height:1}
+  .modal .x:hover{color:var(--danger)}
+  .msg-body{background:var(--surface-2);border:1px solid var(--line);border-radius:9px;padding:9px 10px;font-size:12.5px;white-space:pre-wrap;margin-top:4px;line-height:1.45}
 </style>
 </head>
 <body>
@@ -227,6 +259,14 @@
           <div class="card-head"><div><h3>Embudo del pipeline</h3><div class="hint">De descubierta hasta cita agendada</div></div></div>
           <div id="funnel"></div>
         </div>
+      </section>
+
+      <!-- ===== PIPELINE (kanban) ===== -->
+      <section class="view" id="v-pipeline">
+        <div class="pipebar">
+          <div class="sub2">Tablero en vivo del agente: el <b>scraper</b> deja prospectos en <b>Nuevos</b> → el <b>agente</b> los califica (ICP) y <b>arma una oferta a la medida</b> según lo que encontró → los <b>contacta por 3 medios</b> (correo · WhatsApp · voz) → al responder pasan a <b>conversación</b> → y agenda. Haz clic en una tarjeta para ver la oferta y los mensajes.</div>
+        </div>
+        <div class="kanban" id="kanban"></div>
       </section>
 
       <!-- ===== PROSPECTOS ===== -->
@@ -299,6 +339,11 @@
       </section>
     </div>
   </div>
+</div>
+
+<!-- Modal de detalle de lead (oferta + mensajes por canal) -->
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="box"><span class="x" onclick="closeModal()">✕</span><div id="modalBody"></div></div>
 </div>
 
 <script>
@@ -382,6 +427,7 @@ let CFG = {human_in_the_loop:true, auto_score:80, horario:'09:00–19:00', voz:t
 /* ============ NAV ============ */
 const NAV = [
   ['panel','Panel','▦',null],
+  ['pipeline','Pipeline','▤',()=>L.filter(l=>l.estado!=='descartada').length],
   ['leads','Prospectos','◎',()=>L.length],
   ['verticales','Verticales','⬡',null],
   ['secuencias','Secuencias','↳',null],
@@ -389,7 +435,7 @@ const NAV = [
   ['conversaciones','Conversaciones','✎',()=>INBOX.filter(m=>m.estado==='borrador').length],
   ['config','Configuración','⚙',null],
 ];
-const SUB = {panel:'Resumen operativo del agente de ventas',leads:'Negocios prospectados y su score ICP',
+const SUB = {panel:'Resumen operativo del agente de ventas',pipeline:'Tablero de operación: el scraper agrega, el agente califica, ofrece y contacta',leads:'Negocios prospectados y su score ICP',
   verticales:'Dolor · ángulo · servicio · persona · prueba social',secuencias:'Cadencia multicanal de 3 toques',
   citas:'Diagnósticos agendados para handoff',conversaciones:'Aprobación de mensajes salientes',config:'Operación y cumplimiento'};
 
@@ -601,10 +647,83 @@ function toggleTheme(){
   document.getElementById('themeBtn').textContent=dark?'🌙 Oscuro':'☀️ Claro';
 }
 
+/* ============ PIPELINE (kanban) + OFERTA AUTOGENERADA ============ */
+// Reproduce en el navegador lo que agent/src/offer.js hace en el servidor:
+// a partir de las señales del scraper arma una oferta a la medida.
+function makeOffer(l){
+  const v=VERT.find(x=>x.clave===l.vertical)||{};
+  const h=norm(l.empresa+' '+l.hallazgo);
+  let necesidad;
+  if(/no tiene sitio|sin sitio|sin web/.test(h)) necesidad='Sitio web nuevo (entrega 48h)';
+  else if(/vieja|no responsiva|lenta|2016|basica/.test(h)) necesidad='Rediseño responsivo + SEO';
+  else if(/anuncios|resenas|reseñas|redes|seguimiento|ota/.test(h)) necesidad='Marketing Arranque (campañas + reseñas)';
+  else necesidad='Optimización + captación de leads';
+  // Tamaño del negocio (proxy): nombre/giro grande o score alto => paquete mayor.
+  const grande=/sucursal|hospital|hotel|manufactur|distribuidora|planta|grupo|corporativo/.test(h)||l.score>=88;
+  let paquete= grande ? 'Custom / Escala' : l.score>=82 ? 'Pro / Arranque' : l.score>=72 ? 'Pro' : 'Plus';
+  const rangos={'Plus':'$6k–12k MXN','Pro':'$12k–22k MXN','Pro / Arranque':'$18k–30k MXN','Custom / Escala':'$28k–60k MXN'};
+  return {servicio:v.servicio||'Sitio + Marketing', necesidad, paquete, rango:rangos[paquete], prueba:v.prueba||''};
+}
+function icpClass(s){return s>=85?'icp-hi':s>=70?'icp-md':'icp-lo';}
+const PIPE_COLS=[
+  {k:'Nuevos',          st:['descubierta'],                    off:false, chan:0},
+  {k:'Calificados',     st:['calificada'],                     off:true,  chan:0},
+  {k:'Contactados',     st:['contactada'],                     off:true,  chan:2},
+  {k:'En conversación', st:['respondio','en_conversacion'],    off:true,  chan:3},
+  {k:'Cita agendada',   st:['cita_agendada','handoff','ganada'],off:true,  chan:3},
+];
+function renderPipeline(){
+  document.getElementById('kanban').innerHTML=PIPE_COLS.map(col=>{
+    const items=L.filter(l=>col.st.includes(l.estado));
+    const cards=items.map(l=>{
+      const o=col.off?makeOffer(l):null;
+      const chan= col.chan>=3?['email','whatsapp','voz']:col.chan>=2?['email','whatsapp']:[];
+      return `<div class="kcard" onclick="openLead(${l.id})">
+        <div class="kname">${l.empresa}</div>
+        <div class="kcity">${l.ciudad}</div>
+        <div class="krow"><span class="icp ${icpClass(l.score)}">ICP ${l.score}</span><span class="ktag">${VNAME[l.vertical]||l.vertical}</span></div>
+        ${o?`<div class="koffer">Oferta: <b>${o.necesidad}</b> · ${o.paquete}</div>`:''}
+        ${chan.length?`<div class="kchan">${['email','whatsapp','voz'].map(c=>`<span class="${chan.includes(c)?'on '+c:''}">${c}</span>`).join('')}</div>`:''}
+      </div>`;
+    }).join('') || '<div class="sub2" style="padding:10px;text-align:center">—</div>';
+    return `<div class="kcol"><div class="kh"><span>${col.k}</span><span class="cnt">${items.length}</span></div>${cards}</div>`;
+  }).join('');
+}
+function channelMsgs(l,o){
+  const nombre=(l.contacto&&l.contacto!=='—')?l.contacto.split('·')[0].trim().split(' ')[0]:'';
+  const coma=nombre?(' '+nombre):'';
+  return [
+    {c:'email',t:`Asunto: ${l.empresa}: una idea para ${o.necesidad.toLowerCase()}\n\nHola${coma}, soy Sofía, asistente virtual de ADM. Revisé ${l.empresa} y noté: ${l.hallazgo}. ${o.prueba} Creo que ${o.necesidad} (${o.paquete}) te ayudaría a captar más clientes.\n¿Te late una auditoría express gratis? Te la mando en 24h.\nResponde BAJA para no recibir más mensajes.`},
+    {c:'whatsapp',t:`Hola${coma}, soy Sofía de ADM 👋 Vi que en ${l.empresa}: ${l.hallazgo}. Te preparo *gratis* una propuesta de ${o.necesidad}. ¿Te la comparto? Responde BAJA para salir.`},
+    {c:'voz',t:`Guion de llamada (SIP→PBX): Sofía, asistente virtual de ADM, menciona "${l.hallazgo}", presenta ${o.necesidad} (${o.paquete} · ${o.rango}) y agenda diagnóstico de 15 min con Fernando.`},
+  ];
+}
+function openLead(id){
+  const l=L.find(x=>x.id===id); if(!l)return;
+  const o=makeOffer(l);
+  const contactado=['contactada','respondio','en_conversacion','cita_agendada','handoff','ganada'].includes(l.estado);
+  document.getElementById('modalBody').innerHTML=`
+    <h3 style="margin:0 0 3px;font-size:16px">${l.empresa}</h3>
+    <div class="sub2">${VNAME[l.vertical]||l.vertical} · ${l.ciudad} · <span class="icp ${icpClass(l.score)}">ICP ${l.score}</span> · <span class="pill p-${l.estado}">${l.estado.replace('_',' ')}</span></div>
+    <div class="vfield" style="margin-top:14px"><div class="k">🔎 Hallazgo del scraper</div><div class="v">${l.hallazgo}</div></div>
+    <div class="koffer" style="margin-top:12px;font-size:12.5px">
+      <b>🎯 Oferta armada por el agente</b><br>
+      Necesidad detectada: <b>${o.necesidad}</b><br>
+      Servicio ancla: ${o.servicio}<br>
+      Paquete sugerido: <b>${o.paquete}</b> · ${o.rango}</div>
+    <div class="k" style="margin-top:16px;font-size:11px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700">
+      ${contactado?'✅ Contacto automático enviado por 3 medios':'✉️ Mensajes que el agente enviará por 3 medios'}</div>
+    ${channelMsgs(l,o).map(x=>`<div style="margin-top:9px"><span class="badge-canal bc-${x.c}">${x.c}</span><div class="msg-body">${x.t}</div></div>`).join('')}
+  `;
+  document.getElementById('modal').classList.add('show');
+}
+function closeModal(){document.getElementById('modal').classList.remove('show');}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+
 /* ============ INIT ============ */
 buildNav(); fillFilters();
 renderKPIs(); renderVertBars(); renderExec(); renderFunnel();
-renderLeads(); renderVert(); renderSeq(); renderCitas(); renderInbox(); renderCfg();
+renderPipeline(); renderLeads(); renderVert(); renderSeq(); renderCitas(); renderInbox(); renderCfg();
 </script>
 </body>
 </html>
