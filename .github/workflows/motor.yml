@@ -2,20 +2,18 @@ name: Motor de Ventas ADM (gratis)
 
 # Corre el ciclo del motor en los servidores de GitHub (gratis para repos).
 # - Cada 15 min (cron) y también a mano (workflow_dispatch).
-# - Necesita una base Postgres persistente (Supabase free) y tus llaves,
-#   guardadas como *Secrets* del repo (Settings → Secrets and variables → Actions).
 
 on:
   schedule:
     - cron: "*/15 * * * *"   # cada 15 minutos (UTC)
-  workflow_dispatch:          # botón "Run workflow" para dispararlo manual
+  workflow_dispatch:
 
 concurrency:
   group: motor-ventas
   cancel-in-progress: false
 
 permissions:
-  contents: write   # para publicar data.json de vuelta al repo (panel en vivo)
+  contents: write
 
 jobs:
   ciclo:
@@ -30,7 +28,7 @@ jobs:
       WHATSAPP_TOKEN: ${{ secrets.WHATSAPP_TOKEN }}
       WHATSAPP_PHONE_NUMBER_ID: ${{ secrets.WHATSAPP_PHONE_NUMBER_ID }}
       CAL_LINK: ${{ secrets.CAL_LINK }}
-      USAR_IA: ${{ vars.USAR_IA }}   # ponlo en "true" si quieres redacción con Claude
+      USAR_IA: ${{ vars.USAR_IA }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -42,9 +40,14 @@ jobs:
           (cd agent && npm install --no-audit --no-fund)
           (cd services/outreach && npm install --no-audit --no-fund)
 
-      - name: Prospectar (si hay llave de Google)
+      - name: Prospectar 24/7 (scraper una pasada por hora)
         if: ${{ env.GOOGLE_PLACES_API_KEY != '' }}
-        run: node services/scraper/src/index.js || true
+        run: |
+          if [ "$(date -u +%M)" -lt 15 ]; then
+            node services/scraper/src/index.js || true
+          else
+            echo "scraper: se salta este ciclo (ya corrio esta hora)"
+          fi
 
       - name: Calificar + Ofertar (si hay llave de Anthropic)
         if: ${{ env.ANTHROPIC_API_KEY != '' }}
@@ -55,13 +58,14 @@ jobs:
       - name: Redactar outreach (plantillas gratis / IA opcional)
         run: node agent/src/personalize.js || true
 
-      - name: Enviar correo (Resend)
+      # El contacto SOLO sale de 9:00 a 14:00 (Chihuahua), via config horario_envio.
+      - name: Enviar correo (Resend solo 9-2)
         if: ${{ env.RESEND_API_KEY != '' }}
-        run: node services/outreach/src/email.js --sin-horario || true
+        run: node services/outreach/src/email.js || true
 
-      - name: Enviar WhatsApp
+      - name: Enviar WhatsApp (solo 9-2)
         if: ${{ env.WHATSAPP_TOKEN != '' }}
-        run: node services/outreach/src/whatsapp.js --sin-horario || true
+        run: node services/outreach/src/whatsapp.js || true
 
       - name: Responder a quienes contestaron
         if: ${{ env.ANTHROPIC_API_KEY != '' }}
