@@ -16,7 +16,10 @@ async function main() {
     SELECT l.empresa, COALESCE(v.clave,'') AS vertical, COALESCE(l.ciudad,'') AS ciudad,
            COALESCE(l.hallazgo_clave,'') AS hallazgo, COALESCE(l.score,0) AS score,
            l.estado_pipeline AS estado,
-           COALESCE((SELECT nombre FROM contactos c WHERE c.lead_id=l.id AND c.es_principal LIMIT 1),'—') AS contacto
+           COALESCE((SELECT nombre FROM contactos c WHERE c.lead_id=l.id AND c.es_principal LIMIT 1),'—') AS contacto,
+           COALESCE((SELECT email FROM contactos c WHERE c.lead_id=l.id AND c.es_principal AND c.email<>'' LIMIT 1), l.email_general, '') AS email,
+           COALESCE((SELECT COALESCE(whatsapp,telefono) FROM contactos c WHERE c.lead_id=l.id AND c.es_principal AND COALESCE(whatsapp,telefono)<>'' LIMIT 1), l.telefono, '') AS telefono,
+           COALESCE(l.sitio_web,'') AS sitio_web
     FROM leads l LEFT JOIN verticales v ON v.id=l.vertical_id
     WHERE l.estado_pipeline <> 'descartada'
     ORDER BY l.score DESC, l.creado_en DESC`);
@@ -50,7 +53,7 @@ async function main() {
 
   const data = {
     last_run: new Date().toISOString(),
-    leads: leads.map((l) => [l.empresa, l.vertical, l.ciudad, l.hallazgo, l.score, l.estado, l.contacto]),
+    leads: leads.map((l) => [l.empresa, l.vertical, l.ciudad, l.hallazgo, l.score, l.estado, l.contacto, l.email, l.telefono, l.sitio_web]),
     inbox: inbox.map((m) => ({ id: m.id, empresa: m.empresa, contacto: m.contacto, canal: m.canal,
       estado: m.estado, modelo: m.modelo, asunto: m.asunto, cuerpo: m.cuerpo })),
     citas,

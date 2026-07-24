@@ -384,7 +384,7 @@ const LEADS = [
   ['Climb 3045','gimnasios','Chihuahua','Escalada/fitness; captación por redes (confirmar)',76,'calificada','—'],
   ['Bita Fitness','gimnasios','Chihuahua','Tiene sitio; oportunidad de campañas/ads (confirmar)',74,'descubierta','—'],
 ];
-const L = LEADS.map((r,i)=>({id:i+1,empresa:r[0],vertical:r[1],ciudad:r[2],hallazgo:r[3],score:r[4],estado:r[5],contacto:r[6]}));
+const L = LEADS.map((r,i)=>({id:i+1,empresa:r[0],vertical:r[1],ciudad:r[2],hallazgo:r[3],score:r[4],estado:r[5],contacto:r[6],email:r[7]||'',telefono:r[8]||'',sitio_web:r[9]||''}));
 
 // Aún sin citas: nadie ha sido contactado todavía (estado honesto del arranque).
 const CITAS = [];
@@ -517,15 +517,17 @@ function renderLeads(){
   const q=norm(document.getElementById('q').value);
   const fv=document.getElementById('fVert').value, fe=document.getElementById('fEstado').value;
   const rows=L.filter(l=>{
-    const hay=norm(l.empresa+l.ciudad+l.contacto+l.hallazgo).includes(q);
+    const hay=norm(l.empresa+l.ciudad+l.contacto+l.hallazgo+(l.email||'')+(l.telefono||'')).includes(q);
     return hay && (!fv||l.vertical===fv) && (!fe||l.estado===fe);
   });
-  document.getElementById('leadsBody').innerHTML = rows.length? rows.map(l=>
-    `<tr><td><div class="company">${l.empresa}</div><div class="sub2">${l.contacto}</div></td>
+  document.getElementById('leadsBody').innerHTML = rows.length? rows.map(l=>{
+    const ct=[l.email?'✉️':'', l.telefono?'📱':'', l.sitio_web?'🌐':''].filter(Boolean).join(' ');
+    return `<tr onclick="openLead(${l.id})" style="cursor:pointer">
+     <td><div class="company">${l.empresa}</div><div class="sub2">${l.contacto}${ct?' · '+ct:''}</div></td>
      <td>${VNAME[l.vertical]||l.vertical}</td><td>${l.ciudad}</td>
-     <td class="sub2" style="max-width:280px">${l.hallazgo}</td>
+     <td class="sub2" style="max-width:280px">${l.email?`<span style="color:var(--text)">${l.email}</span>`:l.hallazgo}</td>
      <td class="score ${scoreClass(l.score)}">${l.score}</td>
-     <td><span class="pill p-${l.estado}">${l.estado.replace('_',' ')}</span></td></tr>`).join('')
+     <td><span class="pill p-${l.estado}">${l.estado.replace('_',' ')}</span></td></tr>`;}).join('')
     : '<tr><td colspan="6" class="empty">Sin resultados con esos filtros</td></tr>';
   document.getElementById('leadsCount').textContent=`${rows.length} de ${L.length} leads`;
 }
@@ -683,6 +685,7 @@ function renderPipeline(){
     return `<div class="kcol"><div class="kh"><span>${col.k}</span><span class="cnt">${items.length}</span></div>${cards}</div>`;
   }).join('');
 }
+function waNum(t){const d=(t||'').replace(/[^\d]/g,'');return d?(d.startsWith('52')?d:'52'+d):'';}
 function channelMsgs(l,o){
   const nombre=(l.contacto&&l.contacto!=='—')?l.contacto.split('·')[0].trim().split(' ')[0]:'';
   const coma=nombre?(' '+nombre):'';
@@ -699,7 +702,13 @@ function openLead(id){
   document.getElementById('modalBody').innerHTML=`
     <h3 style="margin:0 0 3px;font-size:16px">${l.empresa}</h3>
     <div class="sub2">${VNAME[l.vertical]||l.vertical} · ${l.ciudad} · <span class="icp ${icpClass(l.score)}">ICP ${l.score}</span> · <span class="pill p-${l.estado}">${l.estado.replace('_',' ')}</span></div>
-    <div class="vfield" style="margin-top:14px"><div class="k">🔎 Hallazgo del scraper</div><div class="v">${l.hallazgo}</div></div>
+    <div class="vfield" style="margin-top:14px"><div class="k">📇 Datos de contacto</div><div class="v" style="line-height:1.9">
+      👤 ${l.contacto&&l.contacto!=='—'?l.contacto:'<span style="color:var(--muted)">sin nombre</span>'}<br>
+      ✉️ ${l.email?`<a href="mailto:${l.email}">${l.email}</a>`:'<span style="color:var(--muted)">sin correo</span>'}<br>
+      📱 ${l.telefono?`<a href="https://wa.me/${waNum(l.telefono)}" target="_blank" rel="noopener">${l.telefono}</a> <span class="sub2">(WhatsApp)</span>`:'<span style="color:var(--muted)">sin teléfono</span>'}<br>
+      🌐 ${l.sitio_web?`<a href="${/^https?:\/\//.test(l.sitio_web)?l.sitio_web:'https://'+l.sitio_web}" target="_blank" rel="noopener">${l.sitio_web.replace(/^https?:\/\//,'').replace(/\/$/,'')}</a>`:'<span style="color:var(--muted)">sin sitio web</span>'}
+    </div></div>
+    <div class="vfield" style="margin-top:12px"><div class="k">🔎 Hallazgo del scraper</div><div class="v">${l.hallazgo}</div></div>
     <div class="koffer" style="margin-top:12px;font-size:12.5px">
       <b>🎯 Oferta armada por el agente</b><br>
       Necesidad detectada: <b>${o.necesidad}</b><br>
@@ -738,7 +747,7 @@ async function cargarDatos(){
     const d = await r.json();
     if(Array.isArray(d.leads) && d.leads.length){
       L.length = 0;
-      d.leads.forEach((row,i)=>L.push({id:i+1,empresa:row[0],vertical:row[1],ciudad:row[2],hallazgo:row[3],score:row[4],estado:row[5],contacto:row[6]||'—'}));
+      d.leads.forEach((row,i)=>L.push({id:i+1,empresa:row[0],vertical:row[1],ciudad:row[2],hallazgo:row[3],score:row[4],estado:row[5],contacto:row[6]||'—',email:row[7]||'',telefono:row[8]||'',sitio_web:row[9]||''}));
     }
     if(Array.isArray(d.inbox)) INBOX = d.inbox;
     if(Array.isArray(d.citas)) { CITAS.length=0; d.citas.forEach(c=>CITAS.push(c)); }
