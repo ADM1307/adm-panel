@@ -18,13 +18,46 @@ const pool = new Pool({
 });
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => a.replace(/^--/, '').split('=')));
-const LIMITE = Number(args.limite ?? 300);
-const TIMEOUT = Number(args.timeout ?? 8000);
+const LIMITE = Number(args.limite ?? 150);
+const TIMEOUT = Number(args.timeout ?? 6000);
+const CONCURRENCIA = Number(args.concurrencia ?? 6);
 
-// Correos "basura" que NO son un contacto real de negocio.
-const JUNK = /(no-?reply|no_reply|newsletter|mailer-daemon|postmaster|abuse@|example\.(com|org)|@example|sentry|wixpress|@wix|godaddy|squarespace|@sentry|yourdomain|yourcompany|tu-?dominio|dominio\.com|correo@|email@dominio|test@test|@2x|@3x|\.(png|jpe?g|gif|webp|svg|css|js|ico)$)/i;
+// Nuestro propio dominio: JAMÁS asignar el correo de ADM como si fuera del lead
+// (muchos sitios de clientes que ADM construyó traen contact@atlasdigitalmark.com).
+const DOMINIO_PROPIO = 'atlasdigitalmark.com';
+
+// Correos "basura" por prefijo (local-part) que NO son un contacto de negocio.
+const JUNK_LOCAL = /^(no-?reply|no_reply|newsletter|mailer-daemon|postmaster|abuse|donotreply|bounce|notifications?|wordpress|user|usuario|nombre|correo|tucorreo|email|mail|ejemplo|example|sample|prueba|test|demo)$/i;
+// Dominios placeholder / propio: se comparan EXACTO (no como substring, para no
+// tumbar gmail.com u hotmail.com que contienen "mail.com").
+const DOM_EXACTOS = new Set([
+  DOMINIO_PROPIO, 'email.com', 'mail.com', 'correo.com', 'domain.com', 'dominio.com',
+  'yourdomain.com', 'yoursite.com', 'tudominio.com', 'test.com', 'example.com',
+  'example.org', 'example.net', 'localhost', 'sentry.io', 'sentry.com',
+]);
+// Autoridades, redes y plataformas: se bloquean por sufijo de dominio.
+const DOM_SUFIJOS = [
+  'inai.org.mx', 'gob.mx', 'google.com', 'googlemail.com', 'gstatic.com',
+  'facebook.com', 'fb.com', 'fbcdn.net', 'instagram.com', 'whatsapp.com',
+  'twitter.com', 'x.com', 'linkedin.com', 'youtube.com', 'tiktok.com', 'pinterest.com',
+  'wordpress.com', 'wordpress.org', 'wix.com', 'wixpress.com', 'squarespace.com',
+  'godaddy.com', 'schema.org', 'w3.org', 'sentry.io',
+];
 // Prefijos que suelen ser el contacto correcto de un negocio.
-const BUENOS = /^(contacto|contact|ventas|hola|info|informacion|administracion|admin|atencion|citas|recepcion|gerencia|direccion)@/i;
+const BUENOS = /^(contacto|contact|ventas|hola|info|informacion|administracion|admin|atencion|citas|reservaciones|reservas|recepcion|gerencia|direccion)@/i;
+
+/** ¿Es un correo utilizable como contacto real del lead? */
+export function correoValido(e, dominio = null) {
+  if (!e) return false;
+  if (!/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/.test(e)) return false;
+  if (e.startsWith('+') || e.includes('..')) return false;
+  const [local, dom] = e.split('@');
+  if (JUNK_LOCAL.test(local)) return false;
+  if (DOM_EXACTOS.has(dom)) return false;
+  if (dom === DOMINIO_PROPIO || dom.endsWith('.' + DOMINIO_PROPIO)) return false;
+  if (DOM_SUFIJOS.some((s) => dom === s || dom.endsWith('.' + s))) return false;
+  return true;
+}
 
 /** Saca correos válidos de un HTML. Devuelve lista ordenada por calidad. */
 export function extraerEmails(html, dominio = null) {
@@ -34,8 +67,7 @@ export function extraerEmails(html, dominio = null) {
     if (!raw) return;
     let e = raw.toLowerCase().trim().replace(/^mailto:/, '').replace(/[?#].*$/, '').replace(/\.$/, '');
     e = decodeURIComponent(e.replace(/%40/gi, '@'));
-    if (!/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/.test(e)) return;
-    if (JUNK.test(e)) return;
+    if (!correoValido(e, dominio)) return;
     set.add(e);
   };
   for (const m of html.matchAll(/mailto:([^"'?>\s]+)/gi)) push(m[1]);
@@ -89,7 +121,9 @@ async function fetchTexto(url, timeoutMs) {
 export async function enriquecerSitio(sitioWeb, timeoutMs = TIMEOUT) {
   const base = /^https?:\/\//i.test(sitioWeb) ? sitioWeb : 'https://' + sitioWeb;
   const dom = dominioDe(base);
-  const rutas = ['', '/contacto', '/contact', '/contactanos', '/contacto.html', '/nosotros', '/aviso-de-privacidad'];
+  // Rutas típicas de contacto. NO usamos /aviso-de-privacidad: suele traer el
+  // correo del INAI o del hosting, no del negocio.
+  const rutas = ['', '/contacto', '/contact', '/contactanos', '/nosotros'];
   const emails = new Set();
   let telefono = null;
   for (const r of rutas) {
@@ -104,7 +138,33 @@ export async function enriquecerSitio(sitioWeb, timeoutMs = TIMEOUT) {
   return { dom, emails: [...emails], telefono };
 }
 
+/** Limpia correos malos que ya estaban guardados (dominio propio, INAI,
+ *  placeholders, redes) para que se puedan volver a enriquecer bien. */
+async function sanitizar() {
+  const { rows } = await pool.query(`SELECT id, email_general FROM leads WHERE email_general IS NOT NULL AND email_general <> ''`);
+  const malos = rows.filter((r) => !correoValido(String(r.email_general).toLowerCase()));
+  for (const m of malos) {
+    await pool.query(`UPDATE leads SET email_general = NULL WHERE id = $1`, [m.id]);
+  }
+  if (malos.length) console.log(`🧹 Limpiados ${malos.length} correos inválidos previos (dominio propio / autoridades / placeholders).`);
+  return malos.length;
+}
+
+/** Corre tareas con concurrencia limitada. */
+async function enParalelo(items, limite, fn) {
+  const cola = [...items.entries()];
+  const workers = Array.from({ length: Math.min(limite, cola.length) }, async () => {
+    while (cola.length) {
+      const [i, item] = cola.shift();
+      await fn(item, i);
+    }
+  });
+  await Promise.all(workers);
+}
+
 async function main() {
+  const limpiados = await sanitizar();
+
   const { rows: leads } = await pool.query(`
     SELECT id, empresa, sitio_web, telefono
     FROM leads
@@ -113,17 +173,17 @@ async function main() {
     ORDER BY score DESC NULLS LAST, creado_en ASC
     LIMIT $1`, [LIMITE]);
 
-  console.log(`🔎 Enriqueciendo ${leads.length} leads con sitio web (buscando correo)...`);
+  console.log(`🔎 Enriqueciendo ${leads.length} leads con sitio web (buscando correo, ${CONCURRENCIA} en paralelo)...`);
   let conEmail = 0, conTel = 0, sinNada = 0;
 
-  for (const l of leads) {
+  await enParalelo(leads, CONCURRENCIA, async (l) => {
     let r;
     try { r = await enriquecerSitio(l.sitio_web); }
-    catch (e) { sinNada++; continue; }
+    catch (e) { sinNada++; return; }
 
     const email = r.emails[0] || null;
     const tel = (!l.telefono && r.telefono) ? r.telefono : null;
-    if (!email && !tel) { sinNada++; continue; }
+    if (!email && !tel) { sinNada++; return; }
 
     await pool.query(`
       UPDATE leads
@@ -140,9 +200,9 @@ async function main() {
       console.log(`  ✓ ${l.empresa} → ${email}`);
     }
     if (tel) conTel++;
-  }
+  });
 
-  const resumen = `con_email=${conEmail} con_tel=${conTel} sin_dato=${sinNada} (de ${leads.length})`;
+  const resumen = `limpiados=${limpiados} con_email=${conEmail} con_tel=${conTel} sin_dato=${sinNada} (de ${leads.length})`;
   console.log(`✅ Enriquecido — ${resumen}`);
   await pool.query(
     `INSERT INTO ejecuciones (job, estado, iniciada_en, terminada_en, items_procesados, resumen)
