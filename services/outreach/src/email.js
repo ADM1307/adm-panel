@@ -10,7 +10,10 @@ import { pool, cfg, suprimido, enHorario, evento, ejecucion } from './lib.js';
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => a.replace(/^--/, '').split('=')));
 const DRY = 'dry' in args;
-const LIMITE = Number(args.limite ?? 100);
+const LIMITE = Number(args.limite ?? 60); // tope por corrida (cuida el límite gratis de Resend)
+// AUTO_ENVIAR=on → el motor contacta SOLO (sin aprobación humana) a leads con score alto.
+const AUTO = process.env.AUTO_ENVIAR === 'on';
+const SCORE_MIN = Number(process.env.AUTO_ENVIAR_SCORE_MIN ?? 70);
 
 async function enviarResend({ from, to, subject, html, replyTo, listUnsub }) {
   const apiKey = process.env.RESEND_API_KEY;
@@ -37,6 +40,8 @@ async function main() {
     await pool.end(); return;
   }
 
+  // En modo AUTO también salen los 'borrador' (auto-contacto) de leads con score >= umbral.
+  const estados = AUTO ? ['aprobado', 'programado', 'borrador'] : ['aprobado', 'programado'];
   const { rows: msgs } = await pool.query(`
     SELECT m.id, m.lead_id, m.asunto, m.cuerpo,
            COALESCE(c.email, l.email_general) AS destino, l.empresa, c.telefono
@@ -44,12 +49,13 @@ async function main() {
     JOIN leads l ON l.id = m.lead_id
     LEFT JOIN contactos c ON c.id = m.contacto_id
     WHERE m.canal='email' AND m.direccion='saliente'
-      AND m.estado IN ('aprobado','programado')
+      AND m.estado = ANY($2::text[])
+      AND (m.estado <> 'borrador' OR COALESCE(l.score,0) >= $3)
       AND (m.programado_para IS NULL OR m.programado_para <= now())
-    ORDER BY m.creado_en
-    LIMIT $1`, [LIMITE]);
+    ORDER BY l.score DESC, m.creado_en
+    LIMIT $1`, [LIMITE, estados, SCORE_MIN]);
 
-  console.log(`✉️  ${msgs.length} correos por enviar ${DRY ? '(DRY RUN)' : '(Resend)'}...`);
+  console.log(`✉️  ${msgs.length} correos por enviar ${AUTO ? '(AUTO)' : ''} ${DRY ? '(DRY RUN)' : '(Resend)'}...`);
   let enviados = 0, suprimidos = 0, fallidos = 0;
 
   for (const m of msgs) {

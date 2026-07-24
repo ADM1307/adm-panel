@@ -11,6 +11,9 @@ import { pool, suprimido, enHorario, evento, ejecucion } from './lib.js';
 const args = Object.fromEntries(process.argv.slice(2).map((a) => a.replace(/^--/, '').split('=')));
 const DRY = 'dry' in args;
 const LIMITE = Number(args.limite ?? 100);
+// AUTO_ENVIAR=on → el motor contacta SOLO por WhatsApp a leads con score alto.
+const AUTO = process.env.AUTO_ENVIAR === 'on';
+const SCORE_MIN = Number(process.env.AUTO_ENVIAR_SCORE_MIN ?? 70);
 
 /** Normaliza a formato E.164 sin '+' (Meta lo pide así). */
 function e164(tel) {
@@ -35,6 +38,7 @@ async function main() {
   if (!DRY && !(await enHorario()) && !('sin-horario' in args)) {
     console.log('⏸  Fuera del horario de envío.'); await pool.end(); return;
   }
+  const estados = AUTO ? ['aprobado', 'programado', 'borrador'] : ['aprobado', 'programado'];
   const { rows: msgs } = await pool.query(`
     SELECT m.id, m.lead_id, m.cuerpo, l.empresa,
            COALESCE(c.whatsapp, c.telefono, l.telefono) AS destino
@@ -42,9 +46,10 @@ async function main() {
     JOIN leads l ON l.id = m.lead_id
     LEFT JOIN contactos c ON c.id = m.contacto_id
     WHERE m.canal='whatsapp' AND m.direccion='saliente'
-      AND m.estado IN ('aprobado','programado')
+      AND m.estado = ANY($2::text[])
+      AND (m.estado <> 'borrador' OR COALESCE(l.score,0) >= $3)
       AND (m.programado_para IS NULL OR m.programado_para <= now())
-    ORDER BY m.creado_en LIMIT $1`, [LIMITE]);
+    ORDER BY l.score DESC, m.creado_en LIMIT $1`, [LIMITE, estados, SCORE_MIN]);
 
   console.log(`💬 ${msgs.length} WhatsApp por enviar ${DRY ? '(DRY RUN)' : '(Cloud API)'}...`);
   let enviados = 0, suprimidos = 0, fallidos = 0;
