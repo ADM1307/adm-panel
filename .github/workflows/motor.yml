@@ -49,11 +49,14 @@ jobs:
             echo "scraper: ya corrio esta hora"
           fi
 
-      - name: Calificar + Ofertar (si hay llave de Anthropic)
-        if: ${{ env.ANTHROPIC_API_KEY != '' }}
+      - name: Calificar + Ofertar (IA si hay llave, si no por reglas GRATIS)
         run: |
-          node agent/src/qualify.js || true
-          node agent/src/offer.js   || true
+          if [ -n "$ANTHROPIC_API_KEY" ]; then
+            node agent/src/qualify.js || true
+            node agent/src/offer.js   || true
+          else
+            node agent/src/qualify_reglas.js || true
+          fi
 
       - name: Redactar outreach (plantillas gratis / IA opcional)
         run: node agent/src/personalize.js || true
