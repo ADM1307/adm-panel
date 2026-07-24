@@ -1,0 +1,22 @@
+name: Prueba de envío (correo)
+
+# Manda un correo de prueba a la bandeja de ADM para verificar Resend + dominio.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prueba:
+    runs-on: ubuntu-latest
+    env:
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      EMAIL_REPLY_TO: ${{ secrets.EMAIL_REPLY_TO }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+      - name: Enviar correo de prueba a la bandeja de ADM
+        run: node services/outreach/src/prueba_envio.js
