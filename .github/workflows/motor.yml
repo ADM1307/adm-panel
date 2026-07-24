@@ -58,6 +58,9 @@ jobs:
             node agent/src/qualify_reglas.js || true
           fi
 
+      - name: Enriquecer contactos (buscar correo en su web · gratis)
+        run: node agent/src/enrich.js || true
+
       - name: Redactar outreach (plantillas gratis / IA opcional)
         run: node agent/src/personalize.js || true
 
