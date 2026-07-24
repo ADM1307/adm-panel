@@ -58,6 +58,10 @@ jobs:
             node agent/src/qualify_reglas.js || true
           fi
 
+      - name: Enriquecer con Google Places (contacto de los que no tienen · si hay llave)
+        if: ${{ env.GOOGLE_PLACES_API_KEY != '' }}
+        run: node services/scraper/src/enrich_places.js || true
+
       - name: Enriquecer contactos (buscar correo en su web · gratis)
         run: node agent/src/enrich.js || true
 
