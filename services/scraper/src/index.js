@@ -35,6 +35,16 @@ async function leerVerticales() {
 }
 
 async function main() {
+  // El descubrimiento con Google Places consume la MISMA cuota diaria que el
+  // enriquecimiento de contactos. Como ya tenemos leads de sobra (OSM los sigue
+  // trayendo gratis), dejamos toda la cuota para enriquecer y apagamos el
+  // descubrimiento de Google por defecto. Actívalo con GOOGLE_DISCOVERY=on.
+  if (process.env.GOOGLE_DISCOVERY !== 'on' && !DRY) {
+    console.log('ℹ️  Descubrimiento con Google desactivado (ahorra cuota para enriquecer contactos). Pon la variable GOOGLE_DISCOVERY=on para reactivarlo.');
+    await pool.end();
+    return;
+  }
+
   const inicio = Date.now();
   let insertados = 0, duplicados = 0, descartados = 0, vistos = 0;
 

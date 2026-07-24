@@ -14,7 +14,9 @@ import { pool } from './db.js';
 import { buscarNegocios } from './places.js';
 
 const args = Object.fromEntries(process.argv.slice(2).map((a) => a.replace(/^--/, '').split('=')));
-const LIMITE = Number(args.limite ?? 300);
+// Google le da al proyecto una cuota GRATIS de ~100 búsquedas/día. Nos
+// mantenemos debajo (90) y corremos una vez al día, para llenar sin costo.
+const LIMITE = Number(args.limite ?? 90);
 
 /** Normaliza para comparar nombres (sin acentos, símbolos ni mayúsculas). */
 function norm(s) {
@@ -43,6 +45,19 @@ async function main() {
     return;
   }
 
+  // Cuota diaria de Google: si ya enriquecimos con éxito en las últimas 20h,
+  // no lo repetimos (así no gastamos la cuota ni la excedemos). El cron reintenta
+  // y en cuanto la cuota se reinicia (medianoche del Pacífico), agarra el turno.
+  const { rows: prev } = await pool.query(`
+    SELECT 1 FROM ejecuciones
+    WHERE job='enriquecimiento_places' AND items_procesados > 0
+      AND iniciada_en > now() - interval '20 hours' LIMIT 1`);
+  if (prev.length) {
+    console.log('ℹ️  Ya se enriqueció con Places en las últimas 20h (cuota diaria). Me salto hasta el próximo día.');
+    await pool.end();
+    return;
+  }
+
   const { rows: leads } = await pool.query(`
     SELECT id, empresa, ciudad, telefono, email_general, sitio_web
     FROM leads
@@ -54,11 +69,18 @@ async function main() {
   console.log(`📞 Google Places: buscando contacto para ${leads.length} leads sin datos...`);
   let conTel = 0, conWeb = 0, sinMatch = 0, sinDato = 0;
 
+  let cuotaAgotada = false;
   for (const l of leads) {
     let places = [];
     try {
       places = await buscarNegocios(`${l.empresa}, ${l.ciudad || 'Chihuahua'}, Chihuahua, México`, { maxPaginas: 1 });
     } catch (e) {
+      // Si Google dice que se acabó la cuota del día, no seguimos golpeando.
+      if (/\b429\b|RESOURCE_EXHAUSTED|RATE_LIMIT/i.test(e.message)) {
+        console.log('🛑 Cuota diaria de Google agotada; continúo mañana.');
+        cuotaAgotada = true;
+        break;
+      }
       console.error(`  ⚠️  ${l.empresa}: ${e.message}`);
       sinDato++;
       continue;
@@ -83,11 +105,11 @@ async function main() {
     if (web) conWeb++;
   }
 
-  const resumen = `con_tel=${conTel} con_web=${conWeb} sin_match=${sinMatch} sin_dato=${sinDato} (de ${leads.length})`;
+  const resumen = `con_tel=${conTel} con_web=${conWeb} sin_match=${sinMatch} sin_dato=${sinDato}${cuotaAgotada ? ' (cuota agotada)' : ''} (de ${leads.length})`;
   console.log(`✅ Places enrich — ${resumen}`);
   await pool.query(
     `INSERT INTO ejecuciones (job, estado, iniciada_en, terminada_en, items_procesados, resumen)
-     VALUES ('enriquecimiento_places','ok', now(), now(), $1, $2)`, [conTel, resumen]);
+     VALUES ('enriquecimiento_places','ok', now(), now(), $1, $2)`, [conTel + conWeb, resumen]);
   await pool.end();
 }
 
