@@ -12,7 +12,7 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => a.replace(/^--/
 const DRY = 'dry' in args;
 const LIMITE = Number(args.limite ?? 60); // tope por corrida (cuida el límite gratis de Resend)
 // AUTO_ENVIAR=on → el motor contacta SOLO (sin aprobación humana) a leads con score alto.
-const AUTO = process.env.AUTO_ENVIAR === 'on';
+const AUTO = process.env.AUTO_ENVIAR !== 'off'; // auto-contacto ACTIVADO por defecto (apaga con AUTO_ENVIAR=off)
 const SCORE_MIN = Number(process.env.AUTO_ENVIAR_SCORE_MIN ?? 70);
 
 async function enviarResend({ from, to, subject, html, replyTo, listUnsub }) {
