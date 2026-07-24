@@ -136,7 +136,7 @@ export async function enriquecerSitio(sitioWeb, timeoutMs = TIMEOUT) {
     if (!html) continue;
     for (const e of extraerEmails(html, dom)) emails.add(e);
     if (!telefono) telefono = extraerTelefono(html);
-    if (emails.size) break; // ya encontramos correo; no seguimos gastando requests
+    if (emails.size && telefono) break; // ya tenemos correo Y teléfono; suficiente
   }
   return { dom, emails: [...emails], telefono };
 }
@@ -172,7 +172,8 @@ async function main() {
     SELECT id, empresa, sitio_web, telefono
     FROM leads
     WHERE sitio_web IS NOT NULL AND sitio_web <> ''
-      AND (email_general IS NULL OR email_general = '')
+      AND ((email_general IS NULL OR email_general = '')
+           OR (telefono IS NULL OR telefono = ''))
     ORDER BY score DESC NULLS LAST, creado_en ASC
     LIMIT $1`, [LIMITE]);
 

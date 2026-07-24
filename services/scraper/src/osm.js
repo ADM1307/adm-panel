@@ -75,8 +75,11 @@ export function normalizarOSM(el, ciudad) {
   const tags = el.tags ?? {};
   const clas = clasificar(tags);
   if (!clas || !tags.name) return null;
-  const website = tags.website || tags['contact:website'] || null;
-  const telefono = tags.phone || tags['contact:phone'] || null;
+  const website = tags.website || tags['contact:website'] || tags.url || null;
+  // Toma cualquier variante de teléfono/móvil/WhatsApp que traiga la ficha.
+  const telefono = tags.phone || tags['contact:phone'] || tags.mobile
+    || tags['contact:mobile'] || tags['contact:whatsapp'] || tags.whatsapp
+    || tags['phone:mobile'] || null;
   const email = tags.email || tags['contact:email'] || null;
   const tieneWeb = Boolean(website);
   return {

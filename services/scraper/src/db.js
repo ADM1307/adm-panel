@@ -39,7 +39,10 @@ export async function upsertLead(entrada) {
     ON CONFLICT (google_place_id) DO UPDATE SET
       rating_google = EXCLUDED.rating_google,
       num_resenas   = EXCLUDED.num_resenas,
-      sitio_web     = COALESCE(EXCLUDED.sitio_web, leads.sitio_web),
+      sitio_web     = COALESCE(NULLIF(leads.sitio_web,''), EXCLUDED.sitio_web),
+      -- Backfill de contacto: conserva lo que ya haya, y rellena si estaba vacío.
+      telefono      = COALESCE(NULLIF(leads.telefono,''), EXCLUDED.telefono),
+      email_general = COALESCE(NULLIF(leads.email_general,''), EXCLUDED.email_general),
       actualizado_en = now()
     RETURNING id, (xmax = 0) AS insertado;
   `;
