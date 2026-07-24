@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-24T00:04:12.182Z",
+  "last_run": "2026-07-24T02:03:38.577Z",
   "leads": [
     [
       "Clínica Plateros",
@@ -5861,15 +5861,6 @@
       "—"
     ],
     [
-      "Dr. Néstor Olivas García",
-      "clinicas",
-      "Chihuahua",
-      "Prostodoncia; capta por teléfono (confirmar)",
-      79,
-      "calificada",
-      "Dr. Néstor Olivas"
-    ],
-    [
       "Punta Rochi",
       "restaurantes",
       "Chihuahua",
@@ -5877,6 +5868,15 @@
       79,
       "calificada",
       "—"
+    ],
+    [
+      "Dr. Néstor Olivas García",
+      "clinicas",
+      "Chihuahua",
+      "Prostodoncia; capta por teléfono (confirmar)",
+      79,
+      "calificada",
+      "Dr. Néstor Olivas"
     ],
     [
       "Little Tony's Pizza (Riberas)",
@@ -5906,19 +5906,19 @@
       "—"
     ],
     [
-      "Climb 3045",
-      "gimnasios",
+      "Los Camarones Hermanos",
+      "restaurantes",
       "Chihuahua",
-      "Escalada/fitness; captación por redes (confirmar)",
+      "Mariscos; sin reservas en línea (confirmar)",
       76,
       "calificada",
       "—"
     ],
     [
-      "Los Camarones Hermanos",
-      "restaurantes",
+      "Climb 3045",
+      "gimnasios",
       "Chihuahua",
-      "Mariscos; sin reservas en línea (confirmar)",
+      "Escalada/fitness; captación por redes (confirmar)",
       76,
       "calificada",
       "—"
@@ -6736,204 +6736,204 @@
   ],
   "inbox": [
     {
-      "id": "fc8fe6b8-aa85-4e4d-86a1-86ebd89e05cd",
-      "empresa": "Tacos Orientales",
+      "id": "a29ea8da-1ad4-433d-ab3b-3f98a954281f",
+      "empresa": "MaConnys Pizza",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Tacos Orientales: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre MaConnys Pizza: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "7ee0a139-6302-4e60-ad91-44b92f2ce43f",
-      "empresa": "Tacos Orientales",
+      "id": "69079dba-0b57-4ebd-8eea-a94588756336",
+      "empresa": "MaConnys Pizza",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Tacos Orientales: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Tacos Orientales y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "MaConnys Pizza: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a MaConnys Pizza y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "d7697010-604c-48d4-b872-75255de05165",
-      "empresa": "Pancake Paradise Saucito",
+      "id": "56c9368f-0290-4a60-92fa-c0832cf6f4a1",
+      "empresa": "Long John Silver's",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Pancake Paradise Saucito: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Long John Silver's: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "58e85b10-5b9e-48d4-bdf7-517a72ed88d8",
-      "empresa": "Pancake Paradise Saucito",
+      "id": "44ecc720-531e-4356-9a1e-ff95e41aa652",
+      "empresa": "Long John Silver's",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Pancake Paradise Saucito: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Pancake Paradise Saucito y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "Long John Silver's: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Long John Silver's y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "975d825c-f1bd-46ea-8494-42472c10ee6f",
-      "empresa": "Dental top braces",
+      "id": "00e0c277-9f8d-4109-b6c1-680a407901a6",
+      "empresa": "El Cometa",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Dental top braces: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre El Cometa: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "50556cdb-2916-43e7-93c9-d99cd867d799",
-      "empresa": "Dental top braces",
+      "id": "9c3a2667-733e-45c3-940d-1ac5f899ae74",
+      "empresa": "El Cometa",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Dental top braces: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Dental top braces y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUna clínica de salud llegó a 1ª página de Google en 90 días y llenó su agenda de valoraciones. Por eso creo que Sitio Pro con agenda online + Marketing Arranque te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "El Cometa: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a El Cometa y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "d03fe61d-d273-4042-b8dd-c38015dab790",
-      "empresa": "Casa david",
+      "id": "5be4b225-ccc1-4760-81b2-21472af884ab",
+      "empresa": "Applebee's",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Casa david: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Applebee's: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "81279cad-8515-44a3-b86f-54cb9c9dcc51",
-      "empresa": "Casa david",
+      "id": "fdf0e5ac-0122-4c97-83af-c91d41319adb",
+      "empresa": "Applebee's",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Casa david: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Casa david y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "Applebee's: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Applebee's y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "41af4cb0-b28a-461b-8da6-24e77c57a1ee",
-      "empresa": "Puesto de tacos Kon Aarón",
+      "id": "765ec9f1-79fa-46d5-9cf3-df631ce96321",
+      "empresa": "Juaritoz Café",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Puesto de tacos Kon Aarón: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Juaritoz Café: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "5e632a0a-8b57-414f-ad26-36f9b6bd474e",
-      "empresa": "Puesto de tacos Kon Aarón",
+      "id": "7bf7aad4-9d1c-4043-8967-02845db650aa",
+      "empresa": "Juaritoz Café",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Puesto de tacos Kon Aarón: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Puesto de tacos Kon Aarón y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "Juaritoz Café: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Juaritoz Café y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "58ccf730-e03f-4951-8a5b-ade28231a4d2",
-      "empresa": "Tex Lex",
+      "id": "6abad1a4-1fa4-4b25-889e-32fce509e234",
+      "empresa": "Burritos Tony",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Tex Lex: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Burritos Tony: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "6e2e217c-7540-4778-9b79-967ad61406eb",
-      "empresa": "Tex Lex",
+      "id": "2b6b03c1-e60b-4f51-b87e-de6947d813c5",
+      "empresa": "Burritos Tony",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Tex Lex: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Tex Lex y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "Burritos Tony: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Burritos Tony y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "4813d14b-5442-43e4-b483-b60539c3cc46",
-      "empresa": "Pizza Salvatore",
+      "id": "c71f125a-17f0-44bc-bb08-81abdc5fe965",
+      "empresa": "Carnitas Mezquital",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Pizza Salvatore: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Carnitas Mezquital: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "95f2a1d4-10f7-41a0-b508-412878b6f232",
-      "empresa": "Pizza Salvatore",
+      "id": "3d7d3ac9-7643-4f79-bc82-546ceb8c370a",
+      "empresa": "Carnitas Mezquital",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Pizza Salvatore: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Pizza Salvatore y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "Carnitas Mezquital: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Carnitas Mezquital y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "445573dd-acdf-48e2-ae7a-4775f34a0957",
-      "empresa": "Bento sushi",
+      "id": "5b612ccb-2e6a-430e-badc-b8516db27775",
+      "empresa": "Casa de Empeno",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Bento sushi: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Casa de Empeno: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "dc36cb91-626b-4ca6-98de-2f1957a49c2c",
-      "empresa": "Bento sushi",
+      "id": "26711cf1-dbaf-43db-807d-49a7080b7d58",
+      "empresa": "Casa de Empeno",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Bento sushi: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Bento sushi y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "Casa de Empeno: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Casa de Empeno y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "bdec0369-3752-4adb-803b-ee43f2a8a92c",
-      "empresa": "Café Kaldi",
+      "id": "190e2dc0-b116-4bc0-83b4-c00926d476f3",
+      "empresa": "El Tenampa",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Café Kaldi: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre El Tenampa: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "6a053d83-af03-4335-b671-dd4506ee247c",
-      "empresa": "Café Kaldi",
+      "id": "52dcc34c-60a2-4f3c-a2b8-d9c4d7454ec2",
+      "empresa": "El Tenampa",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "Café Kaldi: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Café Kaldi y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "El Tenampa: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a El Tenampa y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     },
     {
-      "id": "92e0b564-b675-4081-aa1d-5893ee59c38c",
-      "empresa": "memontados",
+      "id": "16487dcf-83b6-4b1f-b529-c843ceeabc9a",
+      "empresa": "Güinumoss",
       "contacto": "—",
       "canal": "whatsapp",
       "estado": "borrador",
       "modelo": "plantilla",
       "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre memontados: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Güinumoss: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
     },
     {
-      "id": "031cba89-dfc1-4e1c-b2aa-83e50a75b8bb",
-      "empresa": "memontados",
+      "id": "a6bd049b-22f3-44b4-8a8e-e9bd73374721",
+      "empresa": "Güinumoss",
       "contacto": "—",
       "canal": "email",
       "estado": "borrador",
       "modelo": "plantilla",
-      "asunto": "memontados: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a memontados y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+      "asunto": "Güinumoss: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Güinumoss y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     }
   ],
   "citas": [],
