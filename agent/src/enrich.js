@@ -51,6 +51,9 @@ export function correoValido(e, dominio = null) {
   if (!e) return false;
   if (!/^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$/.test(e)) return false;
   if (e.startsWith('+') || e.includes('..')) return false;
+  // Nombres de archivo/imagen que parecen correo: logo@2x.png, foto@1x.webp, etc.
+  if (/@\d+x\./.test(e)) return false;
+  if (/\.(png|jpe?g|gif|webp|svg|bmp|ico|css|js|mjs|json|pdf|mp4|webm|mp3|woff2?|ttf|eot|zip)$/i.test(e)) return false;
   const [local, dom] = e.split('@');
   if (JUNK_LOCAL.test(local)) return false;
   if (DOM_EXACTOS.has(dom)) return false;
