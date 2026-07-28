@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-07-28T08:09:19.339Z",
+  "last_run": "2026-07-28T16:17:18.046Z",
   "leads": [
     [
       "Clínica Plateros",
@@ -55,6 +55,18 @@
       "Chihuahua",
       "Sin sitio web en su ficha pública (OpenStreetMap)",
       100,
+      "calificada",
+      "—",
+      "",
+      "",
+      ""
+    ],
+    [
+      "Starbucks",
+      "restaurantes",
+      "Chihuahua",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      95,
       "calificada",
       "—",
       "",
@@ -9172,6 +9184,26 @@
   ],
   "inbox": [
     {
+      "id": "02f4c61d-1fd1-45b8-8b16-2e4082490f37",
+      "empresa": "Starbucks",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Starbucks: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "e9f8f5a0-eb3a-4810-bc42-0cbefaeb33d3",
+      "empresa": "Starbucks",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "Starbucks: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Starbucks y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
       "id": "2a836214-aa04-428e-95fb-dea864a3feb1",
       "empresa": "Bernardi Café",
       "contacto": "—",
@@ -9350,26 +9382,6 @@
       "modelo": "plantilla",
       "asunto": "Dogos Taz: una idea rápida para más clientes",
       "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Dogos Taz y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
-    },
-    {
-      "id": "d076e061-ad1d-448f-849e-2f5263688f7f",
-      "empresa": "Tripitas Campo Bello",
-      "contacto": "—",
-      "canal": "whatsapp",
-      "estado": "borrador",
-      "modelo": "plantilla",
-      "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Tripitas Campo Bello: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
-    },
-    {
-      "id": "edeed3d9-91cf-4874-beb2-53c714df8a2f",
-      "empresa": "Tripitas Campo Bello",
-      "contacto": "—",
-      "canal": "email",
-      "estado": "borrador",
-      "modelo": "plantilla",
-      "asunto": "Tripitas Campo Bello: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Tripitas Campo Bello y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     }
   ],
   "citas": [],
