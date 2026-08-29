@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-08-28T22:58:09.242Z",
+  "last_run": "2026-08-29T04:06:13.141Z",
   "leads": [
     [
       "Clínica Plateros",
@@ -5294,6 +5294,18 @@
       ""
     ],
     [
+      "H&M",
+      "retail",
+      "Ciudad Juárez",
+      "Sin sitio web en su ficha pública (OpenStreetMap)",
+      90,
+      "calificada",
+      "—",
+      "",
+      "",
+      ""
+    ],
+    [
       "Hotel Adriana",
       "hoteles",
       "Parral",
@@ -9364,6 +9376,26 @@
   ],
   "inbox": [
     {
+      "id": "1a41b9e6-9ab6-4992-ab1f-19b9f3109ec7",
+      "empresa": "H&M",
+      "contacto": "—",
+      "canal": "whatsapp",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": null,
+      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre H&M: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
+    },
+    {
+      "id": "ed4296ee-30ef-40ca-b475-b052b4d25d47",
+      "empresa": "H&M",
+      "contacto": "—",
+      "canal": "email",
+      "estado": "borrador",
+      "modelo": "plantilla",
+      "asunto": "H&M: una idea rápida para más clientes",
+      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a H&M y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUna marca de moda creció +180% en ventas con tienda en línea y anuncios. Por eso creo que Sitio Pro/Custom (catálogo o e-commerce) + Marketing Escala te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
+    },
+    {
       "id": "2be64947-1660-427e-9bd2-95e000d59598",
       "empresa": "CAFFENIO",
       "contacto": "—",
@@ -9542,26 +9574,6 @@
       "modelo": "plantilla",
       "asunto": "Peperoncino: una idea rápida para más clientes",
       "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Peperoncino y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
-    },
-    {
-      "id": "a800005d-cebd-474e-95e2-6232335d84da",
-      "empresa": "Buffalo Wild Wings",
-      "contacto": "—",
-      "canal": "whatsapp",
-      "estado": "borrador",
-      "modelo": "plantilla",
-      "asunto": null,
-      "cuerpo": "Hola soy Sofía, asesora digital de ADM. Te escribí por correo sobre Buffalo Wild Wings: Sin sitio web en su ficha pública (OpenStreetMap). Te preparo *gratis* una auditoría express con 3 mejoras accionables. ¿Te la comparto? Responde BAJA para no recibir más mensajes."
-    },
-    {
-      "id": "13b8b90b-5c3f-4c95-bd29-bc397165c928",
-      "empresa": "Buffalo Wild Wings",
-      "contacto": "—",
-      "canal": "email",
-      "estado": "borrador",
-      "modelo": "plantilla",
-      "asunto": "Buffalo Wild Wings: una idea rápida para más clientes",
-      "cuerpo": "Hola\n\nSoy Sofía, asesora digital de ADM (Atlas Digital Marketing) en Chihuahua. Revisé a Buffalo Wild Wings y noté algo concreto: Sin sitio web en su ficha pública (OpenStreetMap).\n\nUn restaurante subió +3.2× sus reservaciones con agenda online y campañas locales. Por eso creo que Sitio Pro (agenda online + catálogo + WhatsApp) o Agente de IA para reservas te ayudaría a captar a los clientes que ya te buscan en línea.\n\n¿Te late una auditoría express gratis de tu presencia digital? Te la mando en 24h, sin compromiso.\n\nSofía, asesora digital de ADM · Atlas Digital Marketing\nAviso de privacidad: https://atlasdigitalmark.com/privacidad\nResponde BAJA para no recibir más mensajes."
     }
   ],
   "citas": [],
